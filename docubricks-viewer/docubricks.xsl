@@ -16,7 +16,7 @@
 
 	<!--  Original XML data goes in here  -->
 	<hiddendata class="hideclass" id="hiddendata">
-		<xsl:copy-of select="project"/>
+		<xsl:copy-of select="docubricks"/>
 	</hiddendata>
 
 

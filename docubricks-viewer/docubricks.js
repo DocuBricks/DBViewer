@@ -5,17 +5,17 @@
  */
 function renderBricksTree(db){
 
-	
+
 	/**
 	 * Recursively render tree
-	 * 
+	 *
 	 * @param db		Database
 	 * @param lev		Current level
 	 * @param elemTree	XML-element to render into
 	 * @param m			Brick map
-	 * 
+	 *
 	 */
-	function renderBricksTreeR(db,lev,elemTree, m){	
+	function renderBricksTreeR(db,lev,elemTree, m){
 		//Add new instance of BOM
 		var form2 = $("#lefttreeinstance").get(0).cloneNode(true);
 		elemTree.appendChild(form2);
@@ -26,7 +26,7 @@ function renderBricksTree(db){
 		div.setAttribute("class","lefttreenode")
 		thead.get(0).appendChild(div);
 		thead.attr("href","#brick_"+lev.brickid);
-		
+
 		div.appendChild(document.createTextNode(m[lev.brickid].name));
 
 		for(var i=0;i<lev.children.length;i++){
@@ -62,9 +62,9 @@ function renderBricksTree(db){
 /**
  * Get a JSON map   unitID => unit
  */
-function getBricksMap(db) {	
+function getBricksMap(db) {
 	var ret={};
-	pforeach(db["unit"],function(unit){
+	pforeach(db["brick"],function(unit){
 		ret[unit.id]=unit;
 	});
 	return ret;
@@ -73,7 +73,7 @@ function getBricksMap(db) {
 /**
  * Get a JSON map   partID => part
  */
-function getPartsMap(db) {	
+function getPartsMap(db) {
 	var ret={};
 	pforeach(db["physical_part"],function(p){
 		ret[p.id]=p;
@@ -84,7 +84,7 @@ function getPartsMap(db) {
 /**
  * Get a JSON map   authorID => author
  */
-function getAuthorMap(db) {	
+function getAuthorMap(db) {
 	var ret={};
 	pforeach(db["author"],function(author){
 		ret[author.id]=author;
@@ -122,10 +122,10 @@ function pforeach(elem,f){
 function getTopBricks(db){
 	//Make a list of referenced nodes
 	var usednodes = {};
-	pforeach(db["unit"],function(unit){
-		pforeach(unit["logical_part"], function(lu){
+	pforeach(db["brick"],function(unit){
+		pforeach(unit["function"], function(lu){
 			pforeach(lu["implementation"], function(imp){
-				if(imp.type=="unit")
+				if(imp.type=="brick")
 					usednodes[imp.id]=1;
 			});
 		});
@@ -133,39 +133,39 @@ function getTopBricks(db){
 
 	//Keep only nodes without references
 	var hasnodes = [];
-	pforeach(db["unit"],function(unit){
+	pforeach(db["brick"],function(unit){
 		if(usednodes[unit.id]!=1) {
 			hasnodes.push(unit.id);
 		}
 	});
 	return hasnodes;
 }
-	
+
 
 
 
 /**
  * Get a tree of bricks. Returns LIST
- * 
+ *
  * LIST := [TREE]
  * TREE := {brickid:id, children:LIST}
  */
 function getBricksTree(db){
-	
-	
+
+
 	function getBricksTreeR(m,parentid){
 		var ret = {brickid:parentid, children:[]};
 		pu = m[parentid];
-		pforeach(pu["logical_part"], function(lu){
+		pforeach(pu["function"], function(lu){
 			pforeach(lu["implementation"], function(imp){
-				if(imp.type=="unit")
+				if(imp.type=="brick")
 					ret.children.push(getBricksTreeR(m, imp.id));
 			});
 		});
 		return ret;
 		//TODO handle circular dependencies
 	}
-	
+
 	var m = getBricksMap(db);
 	var ret = [];
 	var tb = getTopBricks(db);
@@ -186,30 +186,30 @@ function getPhysicalPartCount(db){
 	pforeach(db["physical_part"],function(part){
 		partcount[part.id]=0;
 	});
-	
+
 	function getPhysicalPartCountR(m,parentid){
 		pu = m[parentid];
-		pforeach(pu["logical_part"], function(lu){
+		pforeach(pu["function"], function(lu){
 			pforeach(lu["implementation"], function(imp){
 				if(imp.type=="physical_part"){
 					var q=lu.quantity;
 					if(isNaN(q))
 						q="1";
 					partcount[imp.id] += parseInt(q);
-				} else if(imp.type=="unit") {
+				} else if(imp.type=="brick") {
 					getPhysicalPartCountR(m,imp.id);
 				}
 			});
 		});
 		//TODO handle circular dependencies
 	}
-	
+
 	//Count recursively
 	var m = getBricksMap(db);
 	var tb = getTopBricks(db);
 	for(var i=0;i<tb.length;i++)
 		getPhysicalPartCountR(m, tb[i], partcount);
-	
+
 	return partcount;
 }
 
@@ -220,7 +220,7 @@ function getPhysicalPartCount(db){
 /**
  * Turn XML into string
  */
-function getXmlString($xmlObj){   
+function getXmlString($xmlObj){
     var xmlString="";
     $xmlObj.children().each(function(){
         xmlString+="<"+this.nodeName+">";
@@ -242,12 +242,12 @@ function string2xml(txt){
 	if (window.DOMParser){
 		parser=new DOMParser();
 		return parser.parseFromString(txt,"text/xml");
-	} else { // Internet Explorer 
+	} else { // Internet Explorer
 		xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
 		xmlDoc.async=false;
 		xmlDoc.loadXML(txt);
 		return xmlDoc;
-	} 
+	}
 }
 
 
@@ -260,7 +260,7 @@ function loadxml2(){
 	xmls = document.getElementById("hiddendata").children[0];
 	xmls = new XMLSerializer().serializeToString(xmls);
 	xmls = string2xml(xmls).documentElement;
-	
+
 	populatePage(XML2jsobj(xmls));
 }
 
@@ -279,9 +279,9 @@ function getNameOfProject(db){
 }
 
 /**
- * 
+ *
  * The function that takes a document and populates the page with content
- * 
+ *
  * @param db
  */
 function populatePage(db){
@@ -299,7 +299,7 @@ function populatePage(db){
 	var q1=document.createElement("a");
 	q1.setAttribute("class", "name");
 	q1.setAttribute("href","#");
-	var qn=document.createTextNode(getNameOfProject(db)); 
+	var qn=document.createTextNode(getNameOfProject(db));
 	q1.appendChild(qn);
 	qx=document.getElementById('name-box');
 	qx.appendChild(q1);
@@ -321,8 +321,8 @@ function populatePage(db){
 	dx.appendChild(spaces);
 */
 
-	
-	
+
+
 	//Add all the bricks, in natural order
 	var flatlistbricks = flattenBricksTree(db);
 	var m = getBricksMap(db);
@@ -336,11 +336,11 @@ function populatePage(db){
 		for(var o=0;o<3;o++) //must be possible to do this better
 			dx.appendChild(document.createElement("br"));
 	}
-	
-	
+
+
 	//Add the total BOM
 	addTotalBOM(dx,db);
-	
+
 }
 
 /**
@@ -351,7 +351,7 @@ function text0(t){
 		return t;
 	else
 		return "";
-} 
+}
 
 /**
  * Add one brick
@@ -359,13 +359,13 @@ function text0(t){
 function addBrick(dx, thisunit, db){
 	var nm = thisunit.name;
 
-	
+
 	////////////////////////////////////////////////////////////////////////
 	// Link here
 	var anch=document.createElement("a");
 	anch.setAttribute("name","brick_"+thisunit.id);
 	dx.appendChild(anch);
-	
+
 	////////////////////////////////////////////////////////////////////////
 	// Title with abstract
 
@@ -374,19 +374,19 @@ function addBrick(dx, thisunit, db){
 
 	var h1a=document.createElement("h1");
 	h1a.appendChild(document.createTextNode(/*"Brick: "+*/thisunit.name));
-	
+
 	var pqja=document.createElement("p");
 	pqja.setAttribute("align","left");
 	pqja.appendChild(h1a);
-	
+
 	var qj1a=document.createElement("div");
 	qj1a.setAttribute("class","project_title");
 	qj1a.appendChild(pqja);
-	
+
 	var qj1=document.createElement("div");
 //	qj1.setAttribute("class","row");
 	qj1.appendChild(qj1a);
-	
+
 	dx.appendChild(qj1);
 
 	thisunit.abstract=text0(thisunit["abstract"]);
@@ -416,8 +416,8 @@ function addBrick(dx, thisunit, db){
 		qj1b.appendChild(img);
 		qj1.appendChild(qj1b);
 	}
-	
-	
+
+
 	dx.appendChild(qj1);
 
 	var wwhow=document.createElement("div");
@@ -431,9 +431,9 @@ function addBrick(dx, thisunit, db){
 
 	///////////////////////////////////////////////////////////////////////////
 	// Legal
-	
+
 	var anyLegal=false;
-	
+
 	var legalnode=document.createElement("div")
 	legalnode.setAttribute("class","col12 colExample");
 
@@ -442,7 +442,7 @@ function addBrick(dx, thisunit, db){
 	if(thisunit.license!=""){
 		var p2=document.createElement("b");
 		p2.appendChild(document.createTextNode("License: "));
-		
+
 		var p1=document.createElement("p");
 		p1.setAttribute("align","left");
 		p1.appendChild(p2);
@@ -457,7 +457,7 @@ function addBrick(dx, thisunit, db){
 	thisunit.author=atleast1(thisunit["author"]);
 	if(thisunit.author.length>0){
 		var p2=document.createElement("b");
-		p2.appendChild(document.createTextNode("Authors: "));		
+		p2.appendChild(document.createTextNode("Authors: "));
 		var p1=document.createElement("p");
 		p1.setAttribute("align","left");
 		p1.appendChild(p2);
@@ -468,7 +468,7 @@ function addBrick(dx, thisunit, db){
 			if(!firstauthor)
 				p1.appendChild(document.createTextNode(", "));
 			console.log(authorid.id)
-			
+
 			var author=authormap[authorid.id];
 			p1.appendChild(document.createTextNode(author.name + " <"+author.email+">"));
 			firstauthor=false;
@@ -482,7 +482,7 @@ function addBrick(dx, thisunit, db){
 	if(thisunit.copyright!=""){
 		var p2=document.createElement("b");
 		p2.appendChild(document.createTextNode("Copyright: "));
-		
+
 		var p1=document.createElement("p");
 		p1.setAttribute("align","left");
 		p1.appendChild(p2);
@@ -493,7 +493,7 @@ function addBrick(dx, thisunit, db){
 
 	if(anyLegal)
 		dx.appendChild(legalnode);
-	
+
 	//////////////////////////////////////////////////////////////////////////
 	/*
 	var insnode=document.createElement("div");
@@ -536,18 +536,18 @@ function addBrick(dx, thisunit, db){
 	insnode.appendChild(insc);
 	dx.appendChild(insnode);
 	*/
-	
+
 	//////////////////////////////////////////////////////////////////////////
 	// Assembly
 	if(!("assembly_instruction" in thisunit))
 		thisunit.assembly_instruction={};
 	addInstruction(dx, thisunit, thisunit.assembly_instruction);
 
-	
+
 	////////////////////////////////////////////////////////////////////////
 	// BOM
 	addBrickBOM(dx, thisunit, db);
-	
+
 }
 
 
@@ -563,7 +563,7 @@ function addTotalBOM(dx, db){
 	dx.appendChild(form2);
 	form2=$(form2);
 	var tbody=$(form2).find("#totalbombody");
-	
+
 	var pcount = getPhysicalPartCount(db);
 
 	//Add rows
@@ -574,9 +574,9 @@ function addTotalBOM(dx, db){
 		row=$(row);
 		row.find("#quantity").html(pcount[thepart.id]);
 		row.find("#description").html(thepart.description);
-		
+
 	});
-	
+
 }
 
 
@@ -592,13 +592,13 @@ function addBrickBOM(dx, thisbrick, db){
 	dx.appendChild(form2);
 	form2=$(form2);
 	var tbody=$(form2).find("#brickbombody");
-	
+
 	//formBomname.html("foo");
 
 	//Add rows
 	var pmap = getPartsMap(db);
 	var brickmap = getBricksMap(db);
-	pforeach(thisbrick["logical_part"], function(lu){
+	pforeach(thisbrick["function"], function(lu){
 		pforeach(lu["implementation"], function(imp){
 			var row = $("#brickbomrow").get(0).cloneNode(true);
 			tbody.get(0).appendChild(row);
@@ -607,30 +607,30 @@ function addBrickBOM(dx, thisbrick, db){
 			if(isNaN(quantity))
 				quantity="1";
 			row.find("#quantity").html(quantity);
-			
+
 			if(imp.type=="physical_part"){
-				
+
 				var thepart=pmap[imp.id];
 				row.find("#description").html(thepart.description);
-				
 
-			} else if(imp.type=="unit") {
-				
+
+			} else if(imp.type=="brick") {
+
 				var thebrick = brickmap[imp.id];
 
 				row.find("#description").html(thebrick.name);
 
 				row.find("#description").attr("href","#brick_"+thebrick.id);
 
-				
-			} else 
+
+			} else
 				console.log("bad imp.type "+imp.type)
 		});
 	});
-	
-	
-	  
-	
+
+
+
+
 }
 
 
@@ -644,24 +644,24 @@ function addInstruction(dx, thisunit, instruction){
 	if (instruction.step.length==0){
 
 	} else{
-		
+
 		//Add new instance of BOM
 		var form2 = $("#instructiontable").get(0).cloneNode(true);
 		dx.appendChild(form2);
 		form2=$(form2);
-		
+
 		$(form2).find("#instructionname").html("Assembly instructions");
-		
+
 		for(var muj=0;muj<instruction.step.length;muj++){
 			thisstep=instruction.step[muj];
-			
+
 			var row = $("#instructionstep").get(0).cloneNode(true);
 			form2.get(0).appendChild(row);
-			
+
 			///////////////////////////////////////////////////
 			// NOOOOOOTE: there can be more than one media file!
-			// Let any additional images be thumbnails below 
-			
+			// Let any additional images be thumbnails below
+
 			var stepnimg=document.createElement("div");
 			stepnimg.setAttribute("class","col6 colExample");
 			var stimgsrc;
@@ -670,8 +670,8 @@ function addInstruction(dx, thisunit, instruction){
 				var img=document.createElement("img");
 				img.setAttribute("src",stimgsrc);
 				img.setAttribute("width","100%");
-				
-				
+
+
 				var stepimgp=document.createElement("p")
 				stepimgp.setAttribute("align","left");
 				stepimgp.appendChild(img);
@@ -683,7 +683,7 @@ function addInstruction(dx, thisunit, instruction){
 				img.setAttribute("src",'images/Logo.png');
 				//img.id="picture"
 				*/
-				
+
 			}
 			row.appendChild(stepnimg);
 
@@ -694,13 +694,13 @@ function addInstruction(dx, thisunit, instruction){
 			stepndesc.setAttribute("class","col6 colExample");
 			var aidescp=document.createElement("p");
 			aidescp.setAttribute("align","left");
-			
-			
+
+
 			var aititle=document.createElement("b");
 			aititle.appendChild(document.createTextNode("Step "+(1+muj)+". "));
 			aidescp.appendChild(aititle);
 
-			
+
 			var aidescptxt=document.createTextNode(text0(thisunit.assembly_instruction.step[muj].description));
 			aidescp.appendChild(aidescptxt);
 			stepndesc.appendChild(aidescp);
@@ -709,13 +709,13 @@ function addInstruction(dx, thisunit, instruction){
 			var br=document.createElement("br");
 			br.setAttribute("clear","all");
 			row.appendChild(br);
-			
+
 		}
 	}
-	
+
 }
- 
- 
+
+
 /**
  * Optionally add: Why, How, What
  */
@@ -729,14 +729,14 @@ function addsomehow(dx, thisunit, elem, head){
 		qhowa.appendChild(qhowb);
 
 		var phow=document.createElement("p");
-		phow.setAttribute("align","left");		
+		phow.setAttribute("align","left");
 		phow.appendChild(document.createTextNode(thisunit[elem]));
 
 		var qhow=document.createElement("div");
 		qhow.setAttribute("class","col4 colExample");
 		qhow.appendChild(qhowa);
 		dx.appendChild(qhow);
-		
+
 		qhow.appendChild(phow);
 	}
 }
@@ -757,7 +757,7 @@ function addsomehow(dx, thisunit, elem, head){
  *
  * Please use as you wish at your own risk.
  */
- 
+
 function XML2jsobj(node) {
 
 	var	data = {};
@@ -774,13 +774,13 @@ function XML2jsobj(node) {
 			data[name] = value;
 		}
 	};
-	
+
 	// element attributes
 	var c, cn;
 	for (c = 0; cn = node.attributes[c]; c++) {
 		Add(cn.name, cn.value);
 	}
-	
+
 	// child elements
 	for (c = 0; cn = node.childNodes[c]; c++) {
 		if (cn.nodeType == 1) {
@@ -828,7 +828,7 @@ function XML2jsobj(node) {
  */
 function flattenBricksTree(db){
 
-	function flattenBricksTreeR(db,lev,list, m){	
+	function flattenBricksTreeR(db,lev,list, m){
 		for(var i=0;i<lev.length;i++){
 			var id=lev[i].brickid;
 			if($.inArray(id,lev)==-1)
