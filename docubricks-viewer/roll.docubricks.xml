@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="docubricks.xsl" type="text/xml" ?>
+<project>
+  <physical_part id="1632972901">
+    <description>yellow fabric</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num />
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media />
+  </physical_part>
+  <physical_part id="457275544">
+    <description>brown fabric</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num />
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media />
+  </physical_part>
+  <physical_part id="921890273">
+    <description>foam</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num />
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media />
+  </physical_part>
+  <physical_part id="1531237771">
+    <description>cotton filler</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num />
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media />
+  </physical_part>
+  <unit id="672400058">
+    <name>roll</name>
+    <abstract>a roll cake shaped pillow</abstract>
+    <long_description />
+    <what />
+    <why />
+    <how />
+    <license>BSD 2-Clause license</license>
+    <media>
+      <file url="./usdata/20150621_123811.jpg" />
+    </media>
+    <assembly_instruction>
+      <step>
+        <description>cut and sew together long fabrics along short side</description>
+        <media>
+          <file url="./usdata/20150620_135425.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>invert. stuff with foam coated with cotton</description>
+        <media>
+          <file url="./usdata/20150621_115702.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>(this step should move up) sew together fabric along long side. then join at the short side. for best result you should sew a shrinkage, and place the joining stitch so that it goes inside the roll</description>
+        <media>
+          <file url="./usdata/20150621_121527.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>roll together and sew outer ends onto the roll by hand</description>
+        <media>
+          <file url="./usdata/0-20150621_123811.jpg" />
+        </media>
+      </step>
+    </assembly_instruction>
+    <author id="1048453426" />
+    <logical_part id="2032269514">
+      <description>fabric1</description>
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1632972901" />
+      <media />
+    </logical_part>
+    <logical_part id="1973275315">
+      <description>fabric2</description>
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="457275544" />
+      <media />
+    </logical_part>
+    <logical_part id="1022634829">
+      <description>foam filling</description>
+      <designator />
+      <quantity />
+      <implementation type="physical_part" id="921890273" />
+      <media />
+    </logical_part>
+    <logical_part id="1211491517">
+      <description>soft filling</description>
+      <designator />
+      <quantity />
+      <implementation type="physical_part" id="1531237771" />
+      <media />
+    </logical_part>
+  </unit>
+  <author id="1048453426">
+    <name>Johan Henriksson</name>
+    <email>mahogny@areta.org</email>
+    <orcid />
+    <affiliation />
+  </author>
+</project>
