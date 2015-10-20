@@ -1,11 +1,3 @@
-
-
-/**
- * Render the tree
- */
-function renderBricksTree(db){
-
-
 	/**
 	 * Recursively render tree
 	 *
@@ -16,49 +8,71 @@ function renderBricksTree(db){
 	 *
 	 */
 	function renderBricksTreeR(db,lev,elemTree, m){
-		//Add new instance of BOM
-		var form2 = $("#lefttreeinstance").get(0).cloneNode(true);
-		elemTree.appendChild(form2);
-		var tbody=$(form2).find("#lefttreesubdiv");
-		var thead=$(form2).find("#lefttreenode");
+			for(var i=0;i<lev.length;i++){
+					var etop = document.createElement("li");
+					var atop = document.createElement("a");
+					//console.log(lev[i])
+					atop.setAttribute("href","#brick_"+lev[i].brickid);
+					//atop.setAttribute("class","dropdown");
 
-		var div=document.createElement("div");
-		div.setAttribute("class","lefttreenode")
-		thead.get(0).appendChild(div);
-		thead.attr("href","#brick_"+lev.brickid);
+					var elem = document.createTextNode(m[lev[i].brickid].name);
+				//	elem.setAttributettr("href","#brick_"+lev.brickid);
+					atop.appendChild(elem);
 
-		div.appendChild(document.createTextNode(m[lev.brickid].name));
 
-		for(var i=0;i<lev.children.length;i++){
-			renderBricksTreeR(db, lev.children[i], tbody.get(0), m);
+
+					etop.appendChild(atop);
+					elemTree.appendChild(etop);
+
+					var elemChild = document.createElement("ul");
+					//elemChild.setAttribute("class","treemenu keepopen");
+
+					if (i==0){
+						elemChild.setAttribute("id","bricks");
+					//	elemChild.setAttribute("class","collapsibleList");
+						elemChild.setAttribute("align","left");
+					}
+					elemTree.appendChild(elemChild);
+					renderBricksTreeR(db, lev[i].children, elemChild, m);
 		}
-	}
-
-	//Find out tree structure
-	var bt = getBricksTree(db);
-
-	//Output the tree
-	var m = getBricksMap(db);
-	var elemTree = document.getElementById("ptree2");
-
-	for(var i=0;i<bt.length;i++){
-		renderBricksTreeR(db, bt[i], elemTree, m);
-	}
 }
 
+/**
+ * Render the tree
+ */
+function renderBricksTree(db){
+
+	//Find out tree structure
+		var bt = getBricksTree(db);
+
+	//Output the tree
+		var m = getBricksMap(db);
+		var elemTree = document.getElementById("ptree2");
+		var elemdiv = document.createElement("div");
+		//var elemdivx = document.createElement("div");
+		//elemdiv.setAttribute("align","left");
+		elemdiv.setAttribute("class","ptree2x");
+		//elemdivx.setAttribute("class","tree");
+
+		var elemChild = document.createElement("ul");
+
+		elemChild.setAttribute("id","parts");
+		elemChild.setAttribute("class","hidable");
 
 
+		elemdiv.appendChild(elemChild);
+		//elemdiv.appendChild(elemdivx);
+ 	elemTree.appendChild(elemdiv);
 
+		renderBricksTreeR(db, bt, elemChild, m);
 
+	//CollapsibleLists.applyTo(document.getElementById("parts"));
+//CollapsibleLists.apply('true');
+//collapse.apply('true');
+		//treecoll();
+}
 
-
-
-
-
-
-
-
-
+/*************************/
 /**
  * Get a JSON map   unitID => unit
  */
@@ -294,34 +308,7 @@ function populatePage(db){
 
 	var dx=document.getElementById("ccentre");
 
-	/*
 	/////////////////////////////////////
-	var q1=document.createElement("a");
-	q1.setAttribute("class", "name");
-	q1.setAttribute("href","#");
-	var qn=document.createTextNode(getNameOfProject(db));
-	q1.appendChild(qn);
-	qx=document.getElementById('name-box');
-	qx.appendChild(q1);
-
-	for (var i=0; i < db.unit.length; i++) {
-		var qj=document.createElement("a");
-		qj.setAttribute("class", "button");
-		qj.setAttribute("href","#");
-		qj.setAttribute("style", "text-align: right; font-size: .35rem; font-weight: 400; line-height: 34px; letter-spacing= .1rem; padding: 0 9px;");
-		var qn=document.createTextNode("brk"+i.toString());
-		qj.appendChild(qn);
-		qy=document.getElementById("cola");
-		qy.appendChild(qj);
-	}
-	//Create body
-	var spaces=document.createElement("br");
-	dx.appendChild(spaces);
-	var spaces=document.createElement("br");
-	dx.appendChild(spaces);
-*/
-
-
 
 	//Add all the bricks, in natural order
 	var flatlistbricks = flattenBricksTree(db);
@@ -495,48 +482,6 @@ function addBrick(dx, thisunit, db){
 		dx.appendChild(legalnode);
 
 	//////////////////////////////////////////////////////////////////////////
-	/*
-	var insnode=document.createElement("div");
-	insnode.setAttribute("class","row");
-
-	var insa=document.createElement("div");
-	insa.setAttribute("class","col4 colExample");
-	var lka=document.createElement("a");
-	lka.setAttribute("href","#");
-	var htxlka=document.createElement("h4");
-	var txlka=document.createTextNode("Assembly Instructions");
-	htxlka.appendChild(txlka);
-	lka.appendChild(htxlka);
-	insa.appendChild(lka);
-
-	insnode.appendChild(insa);
-
-	var insb=document.createElement("div");
-	insb.setAttribute("class","col4 colExample");
-	var lkb=document.createElement("a");
-	lkb.setAttribute("href","#");
-	var htxlkb=document.createElement("h4");
-	var txlkb=document.createTextNode("Test Instructions");
-	htxlkb.appendChild(txlkb);
-	lkb.appendChild(htxlkb);
-	insb.appendChild(lkb);
-
-	insnode.appendChild(insb);
-
-	var insc=document.createElement("div");
-	insc.setAttribute("class","col4 colExample");
-	var lkc=document.createElement("a");
-	lkc.setAttribute("href","#");
-	var htxlkc=document.createElement("h4");
-	var txlkc=document.createTextNode("BOM");
-	htxlkc.appendChild(txlkc);
-	lkc.appendChild(htxlkc);
-	insc.appendChild(lkc);
-
-	insnode.appendChild(insc);
-	dx.appendChild(insnode);
-	*/
-
 	//////////////////////////////////////////////////////////////////////////
 	// Assembly
 	if(!("assembly_instruction" in thisunit))
@@ -633,8 +578,6 @@ function addBrickBOM(dx, thisbrick, db){
 
 }
 
-
-
 /**
  * Add one set of instructions
  */
@@ -665,7 +608,23 @@ function addInstruction(dx, thisunit, instruction){
 			var stepnimg=document.createElement("div");
 			stepnimg.setAttribute("class","col6 colExample");
 			var stimgsrc;
-			if("media" in thisstep && "file" in thisstep.media && "url" in thisstep.media.file){
+
+		//	if(typeof thisstep.media.file != 'undefined'){
+
+	//		 if (!("url" in thisstep.media.file)){
+	//					console.log(thisstep.media.file)
+	//	  }
+				//for (var i in thisstep.media.file){
+				//		if ("url" in thisstep.media.file[i]){
+				//			console.log(thisstep.media.file[i])
+				//	}
+			 // }
+//			}
+
+			if("media" in thisstep && "file" in thisstep.media && (thisstep.media.file !='undefined')){
+			//	console.log(thisunit)
+
+				if ("url" in thisstep.media.file){
 				stimgsrc=thisstep.media.file.url;
 				var img=document.createElement("img");
 				img.setAttribute("src",stimgsrc);
@@ -673,10 +632,79 @@ function addInstruction(dx, thisunit, instruction){
 
 
 				var stepimgp=document.createElement("p")
+				stepimgp.setAttribute("class","smallimg")
 				stepimgp.setAttribute("align","left");
 				stepimgp.appendChild(img);
 				stepnimg.appendChild(stepimgp);
+				//row.appendChild(stepnimg);
 			} else {
+				//console.log(thisunit.id)
+				//Gallery main IMG
+				var qj=thisunit.id.concat("ai").concat("Step-"+(1+muj).toString());
+				//console.log(qj);
+
+				var gcont=document.createElement("p");
+				gcont.setAttribute("align","left");
+				var mainimg=document.createElement("div");
+				//mainimg.setAttribute("id",qj);
+				mainimg.setAttribute("class","imgmain");
+			 //mainimg.style.marginLeft = "0px"
+			 //mainimg.style.marginRight = "0px"
+
+				stimgsrc=thisstep.media.file[0].url;
+				var gimg=document.createElement("img");
+
+				gimg.setAttribute("id",qj);
+				gimg.setAttribute("src",stimgsrc);
+				gimg.setAttribute("width","100%");
+
+				mainimg.appendChild(gimg);
+				gcont.appendChild(mainimg);
+				///////////////////////////////////////
+				var gmenu=document.createElement("div");
+				gmenu.setAttribute("class","row");
+				gmenu.style.marginLeft = "0px"
+				gmenu.style.marginRight = "0px"
+
+			//	var nc=0;
+				for (var j in thisstep.media.file){
+					//var qj=thisunit.id.concat("ai").concat(nc.toString());
+					//console.log(qj);
+					//nc++;
+					//qj.setAttribute("class","col3 colExample");
+					//qjn=document.createElement("p");
+					//qjn.setAttribute("align","left");
+					//var mu=thisstep.media.file[j].url.replace("img/","img/thumbs/");
+					var mu=thisstep.media.file[j].url;//.replace("img/","img/thumbs/")
+					imgj=mu;
+
+					var gimgj=document.createElement("img");
+					gimgj.setAttribute("class","thumb");
+					gimgj.setAttribute("src",imgj);
+					gimgj.onclick = function() { var a=$(this).attr("src");
+					$('#'+qj).attr("src",$(this).attr("src")); };
+				//	updateImg(qj,a); };
+					//gimgj.setAttribute("width","100%");
+					//gimgj.setAttribute("height","auto");
+					//qjn.appendChild(gimgj);
+					//qj.appendChild(qjn);
+					gmenu.appendChild(gimgj);
+					//qjli=document.createElement("li");
+					//qjli.setAttribute("class","image-gallery");
+					//qjli.appendChild(qj);
+					//gmenulst.appendChild(qjli);
+
+					console.log(thisstep.media.file[j].url);
+					console.log(mu);
+				}
+				//gmenu.appendChild(gmenulst);
+				gcont.appendChild(gmenu);
+				//var stimgsrc;
+
+			//console.log(thisstep.media.file.length)
+				stepnimg.appendChild(gcont);
+
+
 				/*
 				var img=document.createElement("img");
 				//dynamically add an image and set its attribute
@@ -685,9 +713,9 @@ function addInstruction(dx, thisunit, instruction){
 				*/
 
 			}
-			row.appendChild(stepnimg);
-
-
+			//row.appendChild(stepnimg);
+		}
+		row.appendChild(stepnimg);
 			/////////////////////////////////////////////////////
 
 			var stepndesc=document.createElement("div");
@@ -740,9 +768,6 @@ function addsomehow(dx, thisunit, elem, head){
 		qhow.appendChild(phow);
 	}
 }
-
-
-
 
 
 /**
@@ -800,29 +825,6 @@ function XML2jsobj(node) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
  * Return the the bricks tree as a flat list
  */
@@ -845,4 +847,42 @@ function flattenBricksTree(db){
 	var list=[];
 	flattenBricksTreeR(db, bt, list, m);
 	return list;
+}
+/**
+*Update image
+**/
+function updateImg(prt,prt2){
+	//var parent=$alert(prt)
+	alert(prt+prt2);
+
+}
+
+/********/
+function treshow(){
+	$( document ).ready( function( ) {
+				$( '.tree li' ).each( function() {
+						if( $( this ).children( 'ul' ).length > 0 ) {
+								$( this ).addClass( 'parent' );
+						}
+				});
+
+				$( '.tree li.parent > a' ).click( function( ) {
+						$( this ).parent().toggleClass( 'active' );
+						$( this ).parent().children( 'ul' ).slideToggle( 'fast' );
+				});
+
+				$( '#all' ).click( function() {
+
+					$( '.tree li' ).each( function() {
+						$( this ).toggleClass( 'active' );
+						$( this ).children( 'ul' ).slideToggle( 'fast' );
+					});
+				});
+
+				$( '.tree li' ).each( function() {
+						$( this ).toggleClass( 'active' );
+						$( this ).children( 'ul' ).slideToggle( 'fast' );
+				});
+
+		});
 }

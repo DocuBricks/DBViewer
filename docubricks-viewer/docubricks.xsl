@@ -6,12 +6,16 @@
 		<meta charset="UTF-8" />
 		<title>Docubricks document</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-		<link href="smart-grid.css" rel="stylesheet" />
-		<link href="terrier/dist/terrier.css" rel="stylesheet" />
-		<link href="docubricks.css" rel="stylesheet" />
+		<link href="css-js-dbricks/smart-grid.css" rel="stylesheet" />
+		<link href="css-js-dbricks/dist/terrierX.css" rel="stylesheet" />
+		<link href="css-js-dbricks/docubricks.css" rel="stylesheet" />
 
-		<script src="terrier/jquery-1.11.3.min.js"></script>
-		<script src="docubricks.js"></script>
+		<script src="css-js-dbricks/jquery-1.11.3.min.js"></script>
+		<script src="css-js-dbricks/CollapsibleLists.js"></script>
+		<script src="css-js-dbricks/listmenu.js"></script>
+		<script src="css-js-dbricks/docubricks.js"></script>
+
+
 	</head>
 
 	<!--  Original XML data goes in here  -->
@@ -87,8 +91,6 @@
 	</hidden>
 
 
-
-
 	<!--  Instruction table -->
 	<hidden>
 		<div class="col12 colExample" id="instructiontable">
@@ -101,36 +103,16 @@
 	</hidden>
 
 
-
-	<!--  Left tree node -->
-	<hidden>
-		<div id="lefttreeinstance">
-			<div>
-				<a id="lefttreenode">
-
-				</a>
-			</div>
-			<br clear="all"/>
-			<div class="lefttreesubdiv" id="lefttreesubdiv">
-			</div>
-		</div>
-	</hidden>
-
-
-
 	<!-- The visible content -->
 	<body>
 		<!-- Left side tree -->
 	<div id="content" class="container">
 
-			<div class="columns one-fourth">
-					<div id="ptree2" class="ptree2" ></div>
-			</div>
-			<div id="ccentre" class="columns three-fourths offset-three">
-			</div>
-
+		<div class="row">
+			<div id="ptree2" class="columns one-fourth"></div>
+			<div id="ccentre" class="columns three-fourths offset-four"></div>
 	</div>
-
+</div>
 	<script type="text/javascript">
 		loadxml2();
 	</script>
