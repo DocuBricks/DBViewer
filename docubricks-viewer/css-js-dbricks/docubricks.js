@@ -385,31 +385,92 @@ function addBrick(dx, thisunit, db){
 		qj1a.appendChild(pqjb);
 	}
 
+	var bdescdiv=document.createElement("div");
+	thisunit.ldesc=text0(thisunit["long_description"]);
+
+	if(thisunit.ldesc!=""){
+		var ldp=document.createElement("p");
+		ldp.setAttribute("class","col12 colExample");
+		//ldp.setAttribute("text-align","left");
+		ldp.setAttribute("style", "text-align: left");
+		var ldtext=document.createTextNode(thisunit.ldesc);
+		ldp.appendChild(ldtext);
+		bdescdiv.appendChild(ldp);
+	}
+	dx.appendChild(qj1);
+ dx.appendChild(bdescdiv);
 	////////////////////////////////////////////////////////////////////////
-	// Representative image
-	if(false){
-		var toi=typeof thisunit.media[0];
-		var qj1b=document.createElement("div");
-		qj1b.setAttribute("class","col5 colExample");
-		var img=document.createElement("img");
-		if(toi == "undefined"){
-							//dynamically add an image and set its attribute
-			img.setAttribute("src",'images/Logo.png');
-								//img.id="picture"
-		}else{
-			img.setAttribute("src",thisunit.media[0]);
-							//img.id="picture"
+
+	if("file" in thisunit.media && (thisunit.media.file !='undefined')){
+	//console.log(thisunit.name);
+	//console.log(thisunit.media);
+	//console.log(thisunit);
+	var brknimg=document.createElement("div");
+	var brickimgsrc;
+
+	if ("url" in thisunit.media.file){
+
+	  console.log(thisunit.name);
+		  brickimgsrc=thisunit.media.file.url;
+		  var bimg=document.createElement("img");
+		  bimg.setAttribute("src",brickimgsrc);
+		  bimg.setAttribute("width","100%");
+				var brkimgp=document.createElement("p")
+		  brkimgp.setAttribute("class","smallimg")
+		  //brkimgp.setAttribute("align","left");
+		  brkimgp.appendChild(bimg);
+		  brknimg.appendChild(brkimgp);
+	 }
+	 else {
+		//Gallery main IMG
+		//var qj=thisstep.id.concat("ai").concat("Step-"+(1+muj).toString());
+		 var qj=thisunit.id.concat("brk");//.concat("Step-"+(1+muj).toString());
+		 var gcont=document.createElement("p");
+		//gcont.setAttribute("align","left");
+		 var mainimg=document.createElement("div");
+		 mainimg.setAttribute("class","imgmain");
+
+		 brimgsrc=thisunit.media.file[0].url;
+		 var bimg=document.createElement("img");
+
+		 bimg.setAttribute("id",qj);
+		 bimg.setAttribute("src",brimgsrc);
+		 bimg.setAttribute("width","100%");
+
+		 mainimg.appendChild(bimg);
+		 gcont.appendChild(mainimg);
+		///////////////////////////////////////
+		var gmenu=document.createElement("div");
+		gmenu.setAttribute("class","row");
+		gmenu.style.marginLeft = "0px"
+		gmenu.style.marginRight = "0px"
+
+		for (var j in thisunit.media.file){
+			var mu=thisunit.media.file[j].url;//.replace("img/","img/thumbs/")
+			imgj=mu;
+			var gimgj=document.createElement("img");
+			gimgj.setAttribute("class","thumb");
+			gimgj.setAttribute("src",imgj);
+			gimgj.onclick = function() { var a=$(this).attr("src");
+			$('#'+qj).attr("src",$(this).attr("src")); };
+			gmenu.appendChild(gimgj);
+
+			//console.log(thisstep.media.file[j].url);
+//			console.log(mu);
 		}
-		qj1b.appendChild(img);
-		qj1.appendChild(qj1b);
+		gcont.appendChild(gmenu);
+		brknimg.appendChild(gcont);
 	}
 
+dx.appendChild(brknimg);
+}
+//row.appendChild(stepnimg);
 
-	dx.appendChild(qj1);
-
+	/////////////////////////////////////////////////////////////////////////
+	//dx.appendChild(brknimg);
+	/////////////////////////////////////////////////////////////////////////
 	var wwhow=document.createElement("div");
 	wwhow.setAttribute("class","row");
-
 	////////////////////////////////////////////////////////////////////////
 	// The top what/why/how
 	addsomehow(dx, thisunit, "what", "What: ");
@@ -421,7 +482,7 @@ function addBrick(dx, thisunit, db){
 
 	var anyLegal=false;
 
-	var legalnode=document.createElement("div")
+	var legalnode=document.createElement("div");
 	legalnode.setAttribute("class","col12 colExample");
 
 	//License
@@ -609,18 +670,6 @@ function addInstruction(dx, thisunit, instruction){
 			stepnimg.setAttribute("class","col6 colExample");
 			var stimgsrc;
 
-		//	if(typeof thisstep.media.file != 'undefined'){
-
-	//		 if (!("url" in thisstep.media.file)){
-	//					console.log(thisstep.media.file)
-	//	  }
-				//for (var i in thisstep.media.file){
-				//		if ("url" in thisstep.media.file[i]){
-				//			console.log(thisstep.media.file[i])
-				//	}
-			 // }
-//			}
-
 			if("media" in thisstep && "file" in thisstep.media && (thisstep.media.file !='undefined')){
 			//	console.log(thisunit)
 
@@ -636,20 +685,14 @@ function addInstruction(dx, thisunit, instruction){
 				stepimgp.setAttribute("align","left");
 				stepimgp.appendChild(img);
 				stepnimg.appendChild(stepimgp);
-				//row.appendChild(stepnimg);
 			} else {
-				//console.log(thisunit.id)
 				//Gallery main IMG
 				var qj=thisunit.id.concat("ai").concat("Step-"+(1+muj).toString());
-				//console.log(qj);
 
 				var gcont=document.createElement("p");
 				gcont.setAttribute("align","left");
 				var mainimg=document.createElement("div");
-				//mainimg.setAttribute("id",qj);
 				mainimg.setAttribute("class","imgmain");
-			 //mainimg.style.marginLeft = "0px"
-			 //mainimg.style.marginRight = "0px"
 
 				stimgsrc=thisstep.media.file[0].url;
 				var gimg=document.createElement("img");
@@ -666,15 +709,7 @@ function addInstruction(dx, thisunit, instruction){
 				gmenu.style.marginLeft = "0px"
 				gmenu.style.marginRight = "0px"
 
-			//	var nc=0;
 				for (var j in thisstep.media.file){
-					//var qj=thisunit.id.concat("ai").concat(nc.toString());
-					//console.log(qj);
-					//nc++;
-					//qj.setAttribute("class","col3 colExample");
-					//qjn=document.createElement("p");
-					//qjn.setAttribute("align","left");
-					//var mu=thisstep.media.file[j].url.replace("img/","img/thumbs/");
 					var mu=thisstep.media.file[j].url;//.replace("img/","img/thumbs/")
 					imgj=mu;
 
@@ -683,37 +718,17 @@ function addInstruction(dx, thisunit, instruction){
 					gimgj.setAttribute("src",imgj);
 					gimgj.onclick = function() { var a=$(this).attr("src");
 					$('#'+qj).attr("src",$(this).attr("src")); };
-				//	updateImg(qj,a); };
-					//gimgj.setAttribute("width","100%");
-					//gimgj.setAttribute("height","auto");
-					//qjn.appendChild(gimgj);
-					//qj.appendChild(qjn);
 					gmenu.appendChild(gimgj);
-					//qjli=document.createElement("li");
-					//qjli.setAttribute("class","image-gallery");
-					//qjli.appendChild(qj);
-					//gmenulst.appendChild(qjli);
 
-					console.log(thisstep.media.file[j].url);
-					console.log(mu);
+					//console.log(thisstep.media.file[j].url);
+					//console.log(mu);
 				}
-				//gmenu.appendChild(gmenulst);
 				gcont.appendChild(gmenu);
-				//var stimgsrc;
-
-			//console.log(thisstep.media.file.length)
 				stepnimg.appendChild(gcont);
 
 
-				/*
-				var img=document.createElement("img");
-				//dynamically add an image and set its attribute
-				img.setAttribute("src",'images/Logo.png');
-				//img.id="picture"
-				*/
 
 			}
-			//row.appendChild(stepnimg);
 		}
 		row.appendChild(stepnimg);
 			/////////////////////////////////////////////////////
