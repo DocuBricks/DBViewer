@@ -1,40 +1,36 @@
-	/**
-	 * Recursively render tree
-	 *
-	 * @param db		Database
-	 * @param lev		Current level
-	 * @param elemTree	XML-element to render into
-	 * @param m			Brick map
-	 *
-	 */
-	function renderBricksTreeR(db,lev,elemTree, m){
-			for(var i=0;i<lev.length;i++){
-					var etop = document.createElement("li");
-					var atop = document.createElement("a");
-					//console.log(lev[i])
-					atop.setAttribute("href","#brick_"+lev[i].brickid);
-					//atop.setAttribute("class","dropdown");
+/**
+ * Recursively render tree
+ *
+ * @param db		Database
+ * @param lev		Current level
+ * @param elemTree	XML-element to render into
+ * @param m			Brick map
+ *
+ */
+function renderBricksTreeR(db,lev,elemTree, m){
+	for(var i=0;i<lev.length;i++){
+		var etop = document.createElement("li");
+		var atop = document.createElement("a");
+		//console.log(lev[i])
+		atop.setAttribute("href","#brick_"+lev[i].brickid);
 
-					var elem = document.createTextNode(m[lev[i].brickid].name);
-				//	elem.setAttributettr("href","#brick_"+lev.brickid);
-					atop.appendChild(elem);
+		var elem = document.createTextNode(m[lev[i].brickid].name);
+		atop.appendChild(elem);
 
 
 
-					etop.appendChild(atop);
-					elemTree.appendChild(etop);
+		etop.appendChild(atop);
+		elemTree.appendChild(etop);
 
-					var elemChild = document.createElement("ul");
-					//elemChild.setAttribute("class","treemenu keepopen");
-
-					if (i==0){
-						elemChild.setAttribute("id","bricks");
-					//	elemChild.setAttribute("class","collapsibleList");
-						elemChild.setAttribute("align","left");
-					}
-					elemTree.appendChild(elemChild);
-					renderBricksTreeR(db, lev[i].children, elemChild, m);
+		var elemChild = document.createElement("ul");
+		if (i==0){
+			elemChild.setAttribute("id","bricks");
+			//	elemChild.setAttribute("class","collapsibleList");
+			elemChild.setAttribute("align","left");
 		}
+		elemTree.appendChild(elemChild);
+		renderBricksTreeR(db, lev[i].children, elemChild, m);
+	}
 }
 
 /**
@@ -43,36 +39,29 @@
 function renderBricksTree(db){
 
 	//Find out tree structure
-		var bt = getBricksTree(db);
+	var bt = getBricksTree(db);
 
 	//Output the tree
-		var m = getBricksMap(db);
-		var elemTree = document.getElementById("ptree2");
-		var elemdiv = document.createElement("div");
-		//var elemdivx = document.createElement("div");
-		//elemdiv.setAttribute("align","left");
-		elemdiv.setAttribute("class","ptree2x");
-		//elemdivx.setAttribute("class","tree");
+	var m = getBricksMap(db);
+	var elemTree = document.getElementById("ptree2");
+	var elemdiv = document.createElement("div");
+	//elemdiv.setAttribute("align","left");
+	elemdiv.setAttribute("class","ptree2x");
+	var elemChild = document.createElement("ul");
 
-		var elemChild = document.createElement("ul");
-
-		elemChild.setAttribute("id","parts");
-		elemChild.setAttribute("class","hidable");
+	elemChild.setAttribute("id","parts");
+	elemChild.setAttribute("class","collapsibleList");
 
 
-		elemdiv.appendChild(elemChild);
-		//elemdiv.appendChild(elemdivx);
- 	elemTree.appendChild(elemdiv);
+	elemdiv.appendChild(elemChild);
+	elemTree.appendChild(elemdiv);
 
-		renderBricksTreeR(db, bt, elemChild, m);
+	renderBricksTreeR(db, bt, elemChild, m);
 
-	//CollapsibleLists.applyTo(document.getElementById("parts"));
-//CollapsibleLists.apply('true');
-//collapse.apply('true');
-		//treecoll();
+	CollapsibleLists.apply('true');
+
 }
 
-/*************************/
 /**
  * Get a JSON map   unitID => unit
  */
@@ -325,9 +314,46 @@ function populatePage(db){
 	}
 
 
+	addPartInstructions(dx, db);
+
 	//Add the total BOM
 	addTotalBOM(dx,db);
 
+}
+
+
+/**
+ * Add instructions on how to prepare components
+ */
+function addPartInstructions(dx, db){
+	pforeach(db["physical_part"], function(thepart){
+		if(atleast1(thepart.manufacturing_instruction.step).length!=0){
+
+			////////////////////////////////////////////////////////////////////////
+			// Link here
+			var anch=document.createElement("a");
+			anch.setAttribute("name","physical_part_"+thepart.id);
+			dx.appendChild(anch);
+
+			////////////////////////////////////////////////////////////////////////
+			// Title with abstract
+			var h1a=document.createElement("h1");
+			h1a.appendChild(document.createTextNode("Physical part: "+thepart.description));
+
+			var pqja=document.createElement("p");
+			pqja.setAttribute("align","left");
+			pqja.appendChild(h1a);
+			var qj1a=document.createElement("div");
+			qj1a.setAttribute("class","project_title");
+			qj1a.appendChild(pqja);
+
+			var qj1=document.createElement("div");
+			qj1.appendChild(qj1a);
+
+			dx.appendChild(qj1);
+			addInstruction(dx, null, thepart.manufacturing_instruction, db);
+		}
+	});
 }
 
 /**
@@ -346,7 +372,6 @@ function text0(t){
 function addBrick(dx, thisunit, db){
 	var nm = thisunit.name;
 
-
 	////////////////////////////////////////////////////////////////////////
 	// Link here
 	var anch=document.createElement("a");
@@ -355,9 +380,6 @@ function addBrick(dx, thisunit, db){
 
 	////////////////////////////////////////////////////////////////////////
 	// Title with abstract
-
-//	qj1a.setAttribute("class","col7 colExample");
-
 
 	var h1a=document.createElement("h1");
 	h1a.appendChild(document.createTextNode(/*"Brick: "+*/thisunit.name));
@@ -371,7 +393,6 @@ function addBrick(dx, thisunit, db){
 	qj1a.appendChild(pqja);
 
 	var qj1=document.createElement("div");
-//	qj1.setAttribute("class","row");
 	qj1.appendChild(qj1a);
 
 	dx.appendChild(qj1);
@@ -384,7 +405,7 @@ function addBrick(dx, thisunit, db){
 		pqjb.appendChild(text);
 		qj1a.appendChild(pqjb);
 	}
-
+	///////////////////////////////////////////////////////////////////////
 	var bdescdiv=document.createElement("div");
 	thisunit.ldesc=text0(thisunit["long_description"]);
 
@@ -398,7 +419,7 @@ function addBrick(dx, thisunit, db){
 		bdescdiv.appendChild(ldp);
 	}
 	dx.appendChild(qj1);
- dx.appendChild(bdescdiv);
+	dx.appendChild(bdescdiv);
 	////////////////////////////////////////////////////////////////////////
 
 	if("file" in thisunit.media && (thisunit.media.file !='undefined')){
@@ -410,35 +431,35 @@ function addBrick(dx, thisunit, db){
 
 	if ("url" in thisunit.media.file){
 
-	  console.log(thisunit.name);
-		  brickimgsrc=thisunit.media.file.url;
-		  var bimg=document.createElement("img");
-		  bimg.setAttribute("src",brickimgsrc);
-		  bimg.setAttribute("width","100%");
+			console.log(thisunit.name);
+				brickimgsrc=thisunit.media.file.url;
+				var bimg=document.createElement("img");
+				bimg.setAttribute("src",brickimgsrc);
+				bimg.setAttribute("width","100%");
 				var brkimgp=document.createElement("p")
-		  brkimgp.setAttribute("class","smallimg")
-		  //brkimgp.setAttribute("align","left");
-		  brkimgp.appendChild(bimg);
-		  brknimg.appendChild(brkimgp);
-	 }
-	 else {
+				brkimgp.setAttribute("class","smallimg")
+				//brkimgp.setAttribute("align","left");
+				brkimgp.appendChild(bimg);
+				brknimg.appendChild(brkimgp);
+		}
+		else {
 		//Gallery main IMG
 		//var qj=thisstep.id.concat("ai").concat("Step-"+(1+muj).toString());
-		 var qj=thisunit.id.concat("brk");//.concat("Step-"+(1+muj).toString());
-		 var gcont=document.createElement("p");
+			var qj=thisunit.id.concat("brk");//.concat("Step-"+(1+muj).toString());
+			var gcont=document.createElement("p");
 		//gcont.setAttribute("align","left");
-		 var mainimg=document.createElement("div");
-		 mainimg.setAttribute("class","imgmain");
+			var mainimg=document.createElement("div");
+			mainimg.setAttribute("class","imgmain");
 
-		 brimgsrc=thisunit.media.file[0].url;
-		 var bimg=document.createElement("img");
+			brimgsrc=thisunit.media.file[0].url;
+			var bimg=document.createElement("img");
 
-		 bimg.setAttribute("id",qj);
-		 bimg.setAttribute("src",brimgsrc);
-		 bimg.setAttribute("width","100%");
+			bimg.setAttribute("id",qj);
+			bimg.setAttribute("src",brimgsrc);
+			bimg.setAttribute("width","100%");
 
-		 mainimg.appendChild(bimg);
-		 gcont.appendChild(mainimg);
+			mainimg.appendChild(bimg);
+			gcont.appendChild(mainimg);
 		///////////////////////////////////////
 		var gmenu=document.createElement("div");
 		gmenu.setAttribute("class","row");
@@ -466,11 +487,12 @@ dx.appendChild(brknimg);
 }
 //row.appendChild(stepnimg);
 
-	/////////////////////////////////////////////////////////////////////////
-	//dx.appendChild(brknimg);
-	/////////////////////////////////////////////////////////////////////////
+
+	////////////////////////////////////////////////////////////////////////
+	
 	var wwhow=document.createElement("div");
 	wwhow.setAttribute("class","row");
+
 	////////////////////////////////////////////////////////////////////////
 	// The top what/why/how
 	addsomehow(dx, thisunit, "what", "What: ");
@@ -482,7 +504,7 @@ dx.appendChild(brknimg);
 
 	var anyLegal=false;
 
-	var legalnode=document.createElement("div");
+	var legalnode=document.createElement("div")
 	legalnode.setAttribute("class","col12 colExample");
 
 	//License
@@ -553,7 +575,6 @@ dx.appendChild(brknimg);
 	////////////////////////////////////////////////////////////////////////
 	// BOM
 	addBrickBOM(dx, thisunit, db);
-
 }
 
 
@@ -580,9 +601,7 @@ function addTotalBOM(dx, db){
 		row=$(row);
 		row.find("#quantity").html(pcount[thepart.id]);
 		row.find("#description").html(thepart.description);
-
 	});
-
 }
 
 
@@ -598,8 +617,6 @@ function addBrickBOM(dx, thisbrick, db){
 	dx.appendChild(form2);
 	form2=$(form2);
 	var tbody=$(form2).find("#brickbombody");
-
-	//formBomname.html("foo");
 
 	//Add rows
 	var pmap = getPartsMap(db);
@@ -619,15 +636,11 @@ function addBrickBOM(dx, thisbrick, db){
 				var thepart=pmap[imp.id];
 				row.find("#description").html(thepart.description);
 
-
 			} else if(imp.type=="brick") {
 
 				var thebrick = brickmap[imp.id];
-
 				row.find("#description").html(thebrick.name);
-
 				row.find("#description").attr("href","#brick_"+thebrick.id);
-
 
 			} else
 				console.log("bad imp.type "+imp.type)
@@ -642,7 +655,7 @@ function addBrickBOM(dx, thisbrick, db){
 /**
  * Add one set of instructions
  */
-function addInstruction(dx, thisunit, instruction){
+function addInstruction(dx, thisunit, instruction, db){
 	instruction.step = atleast1(instruction["step"]);
 
 	if (instruction.step.length==0){
@@ -670,8 +683,9 @@ function addInstruction(dx, thisunit, instruction){
 			stepnimg.setAttribute("class","col6 colExample");
 			var stimgsrc;
 
+
+
 			if("media" in thisstep && "file" in thisstep.media && (thisstep.media.file !='undefined')){
-			//	console.log(thisunit)
 
 				if ("url" in thisstep.media.file){
 				stimgsrc=thisstep.media.file.url;
@@ -686,6 +700,7 @@ function addInstruction(dx, thisunit, instruction){
 				stepimgp.appendChild(img);
 				stepnimg.appendChild(stepimgp);
 			} else {
+				//console.log(thisunit.id)
 				//Gallery main IMG
 				var qj=thisunit.id.concat("ai").concat("Step-"+(1+muj).toString());
 
@@ -719,40 +734,37 @@ function addInstruction(dx, thisunit, instruction){
 					gimgj.onclick = function() { var a=$(this).attr("src");
 					$('#'+qj).attr("src",$(this).attr("src")); };
 					gmenu.appendChild(gimgj);
-
-					//console.log(thisstep.media.file[j].url);
-					//console.log(mu);
+					console.log(thisstep.media.file[j].url);
+					console.log(mu);
 				}
 				gcont.appendChild(gmenu);
+
 				stepnimg.appendChild(gcont);
-
-
 
 			}
 		}
 		row.appendChild(stepnimg);
-			/////////////////////////////////////////////////////
-
-			var stepndesc=document.createElement("div");
-			stepndesc.setAttribute("class","col6 colExample");
-			var aidescp=document.createElement("p");
-			aidescp.setAttribute("align","left");
+		/////////////////////////////////////////////////////
 
 
-			var aititle=document.createElement("b");
-			aititle.appendChild(document.createTextNode("Step "+(1+muj)+". "));
-			aidescp.appendChild(aititle);
+		var stepndesc=document.createElement("div");
+		stepndesc.setAttribute("class","col6 colExample");
+		var aidescp=document.createElement("p");
+		aidescp.setAttribute("align","left");
 
 
-			var aidescptxt=document.createTextNode(text0(thisunit.assembly_instruction.step[muj].description));
-			aidescp.appendChild(aidescptxt);
-			stepndesc.appendChild(aidescp);
-			row.appendChild(stepndesc);
+		var aititle=document.createElement("b");
+		aititle.appendChild(document.createTextNode("Step "+(1+muj)+". "));
+		aidescp.appendChild(aititle);
 
-			var br=document.createElement("br");
-			br.setAttribute("clear","all");
-			row.appendChild(br);
+		var aidescptxt=document.createTextNode(text0(thisstep.description));
+		aidescp.appendChild(aidescptxt);
+		stepndesc.appendChild(aidescp);
+		row.appendChild(stepndesc);
 
+		var br=document.createElement("br");
+		br.setAttribute("clear","all");
+		row.appendChild(br);
 		}
 	}
 
@@ -863,6 +875,8 @@ function flattenBricksTree(db){
 	flattenBricksTreeR(db, bt, list, m);
 	return list;
 }
+
+
 /**
 *Update image
 **/
@@ -870,34 +884,4 @@ function updateImg(prt,prt2){
 	//var parent=$alert(prt)
 	alert(prt+prt2);
 
-}
-
-/********/
-function treshow(){
-	$( document ).ready( function( ) {
-				$( '.tree li' ).each( function() {
-						if( $( this ).children( 'ul' ).length > 0 ) {
-								$( this ).addClass( 'parent' );
-						}
-				});
-
-				$( '.tree li.parent > a' ).click( function( ) {
-						$( this ).parent().toggleClass( 'active' );
-						$( this ).parent().children( 'ul' ).slideToggle( 'fast' );
-				});
-
-				$( '#all' ).click( function() {
-
-					$( '.tree li' ).each( function() {
-						$( this ).toggleClass( 'active' );
-						$( this ).children( 'ul' ).slideToggle( 'fast' );
-					});
-				});
-
-				$( '.tree li' ).each( function() {
-						$( this ).toggleClass( 'active' );
-						$( this ).children( 'ul' ).slideToggle( 'fast' );
-				});
-
-		});
 }
