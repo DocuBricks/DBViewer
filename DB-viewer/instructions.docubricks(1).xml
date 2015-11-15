@@ -1,0 +1,2803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xml" href="docubricks.xsl"?>
+<docubricks>
+  <physical_part id="156432967">
+    <description>SFP module sleeve</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P1</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././././././././././././././img/M-P1.JPG" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Check if the small PCB - SFP extension plug (E-3), fits in the SFP module sleeve. Also check the SFP module sleeve fits in the media converter. In the case it does not, check printer settings and reprint the part.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P1-1.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="143371102">
+    <description>SFP mount</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P2</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././././././././././././././img/M-P2.jpg" />
+      <file url="./././././././././././././././././img/M-P2-a.jpg" />
+      <file url="./././././././././././././././././img/M-P2-b.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill four holes with 11mm drill or reamer. Check that the metal rod slides trough each hole easily.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P2-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Re-drill two front small holes with 3mm drill. Do not re-drill other eight holes!</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P2-2.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="427049766">
+    <description>SFP spring mount</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P3</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././././././././././././././img/M-P3.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill two holes with 8.1mm drill or reamer.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P3-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Re-drill the middle hole with 4mm drill.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P3-2.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="1223348923">
+    <description>Ring outer</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P4</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././././././././././././././img/M-P4.jpg" />
+      <file url="./././././././././././././././././img/M-P4-a.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill all nine holes with 3mm drill.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P4-1.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="1949652032">
+    <description>Ring inner</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P5</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././img/M-P5.jpg" />
+      <file url="./././././././././././././././././img/M-P5-a.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill nine holes on the top with 3mm drill.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P5-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Drill four side holes with 4mm drill.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P5-2.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="651846969">
+    <description>Lens mount outer</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P6</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././././././././././././././img/M-P6.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill nine holes with 3mm drill. Re-drill four holes with 8.1mm drill, be careful not to drill them trough the part.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P6-1.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="355615712">
+    <description>Lens mount</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P7</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././img/M-P7.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill nine holes with 3mm drill. User a drill or a reamer for the 12mm hole. Re-drill four holes with 8.1mm drill.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P7-1.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="300978772">
+    <description>Laser mount</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P8</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././././././././././././././img/M-P8.jpg" />
+      <file url="./././././././././././././././././img/M-P8-a.jpg" />
+      <file url="./././././././././././././././././img/M-P8-b.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill nine holes on the bottom, two on the sides and two on the top with 3mm drill.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P8-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Re-drill four holes with 8.1mm drill or reamer.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P8-2.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Check that the metal rod slides trough each hole easily.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P8-3.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="1401037567">
+    <description>Wedge left</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P9</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././././././././././././././img/M-P9.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill a hole in both parts with 3mm drill.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P9-1.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="462493670">
+    <description>Wedge right</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P10</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././././././././././././././img/M-P9.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill a hole in both parts with 3mm drill.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P9-1.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="445185661">
+    <description>Coupler M4</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P11</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././img/M-P11.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1439566493">
+    <description>MC mount</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P12</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././img/M-P12.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill two holes with 8.1mm drill or reamer.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P12-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Check that the metal rod slides trough both holes easily.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P12-2.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="649509201">
+    <description>Motor mount</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P13</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././././././././././././././img/M-P13.jpg" />
+      <file url="./././././././././././././././././img/M-P13-a.jpg" />
+      <file url="./././././././././././././././././img/M-P13-b.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill 4 holes with 8.1mm drill or reamer.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P13-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Check that the metal rod slides trough each hole easily.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P13-2.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="540043447">
+    <description>Lid</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P15</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././././././././././././././img/M-P15.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill two holes with 3mm drill.</description>
+        <media />
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="1336547016">
+    <description>Bracket</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P16</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="./././././././././././././././././././././././././././././img/M-P16.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill both holes in each bracket with 3mm drill.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P16-1.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="1299311884">
+    <description>Rubber</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-O1</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././././././././././././img/M-O1.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1320623569">
+    <description>Inner SFP mount</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P14</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O7.JPG" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>If the part is 3D printed, re-drill eight holes with 3mm drill.</description>
+        <media>
+          <file url="././././././././././././././././img/M-O7-1.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="1172897957">
+    <description>Stainless steel rod</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-O2</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O2.jpg" />
+    </media>
+    <manufacturing_instruction>
+      <step>
+        <description>Grind rough edges of the rod.</description>
+        <media>
+          <file url="././././././././././././././././img/M-O2-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description />
+        <media>
+          <file url="././././././././././././././././img/M-O2-2.jpg" />
+        </media>
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="627470048">
+    <description>Lens</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-O3</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O3.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1525018106">
+    <description>Spring</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-O4</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O4.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="450777737">
+    <description>Green laser 5mV</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-9</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O6.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="900591337">
+    <description>Sliding bushing</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-O6</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O8.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1146591845">
+    <description>Motor</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-10</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/E-10.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="643324725">
+    <description>Waterproof eth</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-11</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O10.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1569586582">
+    <description>Waterproof eth + pwr</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-12</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O11.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1472466945">
+    <description>TP-Link media converter</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-13</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O13.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="107922610">
+    <description>Cable ties</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-O7</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O12.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="143480854">
+    <description>Washer M4</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F15</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-F15.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="100094399">
+    <description>Washer M3</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F14</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-F14.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="694341069">
+    <description>Long nut, HEX DIN6334 M5</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F13</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-F10.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1906572277">
+    <description>Nut, square  DIN562 M4</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F12</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-F12.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="433796136">
+    <description>Nut, square DIN562 M3</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F11</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-F11.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="2103176148">
+    <description>Threaded rod M5x65</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F10</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-F10.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1585577842">
+    <description>Screw HEX DIN933 M4x35</description>
+    <supplier />
+    <supplier_part_num>M-F9</supplier_part_num>
+    <manufacturer_part_num />
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-F9.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="27737697">
+    <description>Screw HEX socket DIN912 M4x12</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F7</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-F7.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1043457599">
+    <description>Screw TORX BN6404 M3x10</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F6</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././img/M-F6.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="155671569">
+    <description>Screw HEX socket DIN912 M4x45</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F5</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././img/M-F5.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="951088927">
+    <description>Screw HEX socket DIN912 M3x35</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F4</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././img/M-F4.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1620970247">
+    <description>Screw HEX socket DIN912 M3x25</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F3</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/M-F3.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1196321165">
+    <description>Set screw HEX socket DIN913 M3x16</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F1</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/M-F1.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1741395927">
+    <description>Coupler M5</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-O8</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O14.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1402623794">
+    <description>Cable IDC long</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-14</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O15.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1673231631">
+    <description>Cable IDC short</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-15</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O16.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1102138332">
+    <description>SATA cable</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-16</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././././././././././img/M-O17.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="431363721">
+    <description>Half-bracket</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-P17</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media />
+    <manufacturing_instruction>
+      <step>
+        <description>Re-drill the hole with 3mm drill.</description>
+        <media />
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <physical_part id="1409593954">
+    <description>Power module</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-1</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/E-1.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="628839031">
+    <description>Raspberry pi shield</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-2</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/E-2.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1532750102">
+    <description>Sfp extension plug PCB</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-3</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././img/E-3.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1964809520">
+    <description>Sfp extension socket</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-4</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././img/E-4.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="611992735">
+    <description>Universal unipolar stepper driver</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-5</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././img/E-5.jpg" />
+      <file url="././././././././img/E-5a.jpg" />
+      <file url="././././././././img/E-5b.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="890941621">
+    <description>Raspberry Pi 2B microcomputer</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-6</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/E-6.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="2097302384">
+    <description>PoE injector 24V</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-7</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media />
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="821294759">
+    <description>SFP module</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-8</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././././././img/E-8.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1765512906">
+    <description>Square profile</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-E1</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/M-E1.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1822230973">
+    <description>U-Profile</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-E2</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/M-E2.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="520946028">
+    <description>L-Profile</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-E3</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/M-E3.jpg" />
+      <file url="././././img/M-E3a.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="704278121">
+    <description>Eye bolt Screw DIN444A M10x40</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F17</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/M-F17.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1854424443">
+    <description>Nut, HEX M10</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F16</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/M-F16.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="519660714">
+    <description>Mounting bracket set</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-E4</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/M-E4.jpg" />
+      <file url="././././img/M-E4a.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="988897778">
+    <description>Screw round head square neck bolt DIN603 M10x75</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F18</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/M-F18.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="260658620">
+    <description>Screw HEX bolt DIN933 M10x160</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F19</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/M-F19.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="505267467">
+    <description>Washer M10</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F20</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/M-F20.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1515181741">
+    <description>Spring lock washer DIN127 M10</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-F21</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/M-F21.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="1933201803">
+    <description>M3 male-female spacer</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>M-O9</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/M-O9.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="256331051">
+    <description>Micromatch cable</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-17</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media>
+      <file url="././././img/E-s7a.jpg" />
+    </media>
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="878442903">
+    <description>Power cable</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-18</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media />
+    <manufacturing_instruction />
+  </physical_part>
+  <physical_part id="163884268">
+    <description>Power cable with the connector</description>
+    <supplier />
+    <supplier_part_num />
+    <manufacturer_part_num>E-19</manufacturer_part_num>
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media />
+    <manufacturing_instruction />
+  </physical_part>
+  <brick id="864571752">
+    <name>KORUZA</name>
+    <abstract>1Gbps networking connectivity for locations up to 100m apart, using an eye-safe infrared light beam.</abstract>
+    <long_description>KORUZA is a low cost, open source and open hardware, wireless optical system, making the free space optical (FSO) technology available to masses and providing an alternative to Wi-Fi networks.</long_description>
+    <notes />
+    <license />
+    <media>
+      <file url="././././././././././././././././././././././././img/K1.jpg" />
+      <file url="././././././././././././././././././././././././img/K2.jpg" />
+      <file url="././././././././././././././././././././././././img/K3.jpg" />
+    </media>
+    <assembly_instruction>
+      <step>
+        <description>Begin by manufacturing all 3D printed parts. Follow the instructions in the Manufacturing section. If using KORUZA DIY kit, 3D printed parts are already included.</description>
+        <media>
+          <file url="././././././././././././././././././././././././img/manufacturing1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Some parts need additional treatment. Detailed instructions are enclosed to each part. If using KORUZA DIY kit with included 3D printed parts, they do not need any additional treatment.</description>
+        <media>
+          <file url="././././././img/M-P8-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Assemble the electronics by flowing  instructions in the Electronics section.</description>
+        <media>
+          <file url="././././././././././././././././././././././././img/M-23.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Finally, follow the instructions in the Mechanical section. Assemble all mechanical modules. Instructions on how to combine mechanical and electronics modules can be found there as well.</description>
+        <media>
+          <file url="././././././././././././././././././././././././img/M-6.jpg" />
+        </media>
+      </step>
+    </assembly_instruction>
+    <function id="1638058020">
+      <description>Manufacturing</description>
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="brick" id="839384070" />
+    </function>
+    <function id="492098767">
+      <description>Electronics</description>
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="brick" id="1468369815" />
+    </function>
+    <function id="444198753">
+      <description>Mechanical</description>
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="brick" id="1049122606" />
+    </function>
+    <function id="850214463">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="brick" id="423240191" />
+    </function>
+  </brick>
+  <brick id="839384070">
+    <name>Manufacturing</name>
+    <abstract>Manufacturing and additional treatment of 3D printed and other custom made parts.</abstract>
+    <long_description>Most of the costume made parts used in the KORUZA system are 3D printed, using affordable 3D printers. While those parts are already included in the DIY kit, one can print them out on its own as well. Note that most of the parts need additional treatment to achieve optimal fit and precision. DIY kit parts need additional treatment as well!</long_description>
+    <notes />
+    <license />
+    <media />
+    <assembly_instruction>
+      <step>
+        <description>1. The assembly procedure of KORUZA units requires the following tools:
+	- inbus M3,
+	- inbus M4,
+	- M3 TORX screwdriver,
+	- small electrical flat screwdriver,
+	- power drill,
+	- 3mm drill,
+	- 4mm drill,
+	- 8.1mm drill,
+	- 11mm reamer (alternatively drill),
+	- calliper,
+	- utility knife,
+	- socket wrench 17
+	- socket wrench 13.
+
+
+The following tools may come handy, but are not necessary:
+	- rubber hammer,
+	- drill press.</description>
+        <media />
+      </step>
+      <step>
+        <description>First print all 3D printed parts. If you are using KORUZA DIY kits they are already included.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/manufacturing1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>For each 3D printed part you can find enclosed stl file and appropriate printer settings, tested on open-source TrubleMaker printer. Shell thickness, bottom/top thickness and fill density settings are applicable for other 3D printers as well, while other may wary depending on the printer used. By default shell and bottom/top thickness are set to 2mm and fill density to 20% for all parts.</description>
+        <media>
+          <file url="./././././././././././././././img/manufacturing1a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Some parts need additional treatment. Follow the instructions carefully to achieve optimal fit for later assembly. Parts included in DIY kit do not need any additional treatment.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/manufacturing2.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>When re-drilling holes we recommend using the drill press. Pay close attention to always drill perpendicular to the part surface.</description>
+        <media>
+          <file url="././././././img/M-P9-1.jpg" />
+        </media>
+      </step>
+    </assembly_instruction>
+  </brick>
+  <brick id="1468369815">
+    <name>Electronics</name>
+    <abstract>Electronical components of the KORUZA system.</abstract>
+    <long_description>Several electronic components implement the main functions of the system and monitor its performance. The electronics consist of five micro-controllers and a RaspberyPi unit. They control movements of the unit carried out by three motors, used to achieved optimal alignment, monitor power supply, performance of the SFP and media converter.</long_description>
+    <notes />
+    <license />
+    <media />
+    <assembly_instruction>
+      <step>
+        <description>We will first assemble the control electronics. You need to prepare the power module PCB (E-1), Raspberry pi shield (E-2) and the Raspberry Pi 2B microcomputer (E-6).</description>
+        <media>
+          <file url="././././img/E-s1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the power module PCB (E-1), two M3 male-female spacers (M-O9) and two M3 nuts (M-F11).</description>
+        <media>
+          <file url="././././img/E-s2.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert spacers trough side holes on the PCB and fasten them with nuts. Keep in mind male side must be pointing up.</description>
+        <media>
+          <file url="././././img/E-s3.jpg" />
+          <file url="././././img/E-s3a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the Raspberry Pi PCB shield (E-2). Prepare two more spacers (M-O9), two M3 nuts (M-F11) and two M3 washers (M-F14).</description>
+        <media>
+          <file url="././././img/E-s4.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Put washer on two spacers and attach them to the side of the shield PCB with connectors. Fasten them with the nuts.</description>
+        <media>
+          <file url="././././img/E-s5.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the power cable (E-18) into the screw terminal (the one located in the middle of the side with connectors), mind the polarity.</description>
+        <media>
+          <file url="././././img/E-s6.jpg" />
+          <file url="././././img/E-s6a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Attach the micromatch cable (E-17) on the connector, next to the power cable.</description>
+        <media>
+          <file url="././././img/E-s7.jpg" />
+          <file url="././././img/E-s7a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Attach the two PCB boards, such that the power module is located on top of the  Raspberry Pi shield, as shown in the photo.</description>
+        <media>
+          <file url="././././img/E-s8.jpg" />
+          <file url="././././img/E-s8a.jpg" />
+          <file url="././././img/E-s8b.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take two spacers  (M-O9).</description>
+        <media>
+          <file url="././././img/E-s9.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Attach spacers  on the bottom side of the Raspberry Pi shield, so that they connect with the spacers already attached on the Power module PCB.</description>
+        <media>
+          <file url="././././img/E-s10.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the Raspberry Pi PCB.</description>
+        <media>
+          <file url="././././img/E-s11.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Put the assembled PCB shield on top of the Raspberry Pi as shown on the photo.</description>
+        <media>
+          <file url="././././img/E-s12.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take four more spacers (M-O9).</description>
+        <media>
+          <file url="././././img/E-s13.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Attach them to the Raspberry Pi PCB.</description>
+        <media>
+          <file url="././././img/E-s14.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>To assemble the SFP plug prepare the SFP extension plug PCB (E-3), 3D printed SFP module sleeve (M-P1), short IDC cable (E-15) and SATA cable (E-16).</description>
+        <media>
+          <file url="././././img/M-P1.jpg" />
+          <file url="././././img/M-O16.jpg" />
+          <file url="././././img/M-O17.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the SFP plug into the 3D printed sleeve, such that the connectors are pointing to the back side of the sleeve.</description>
+        <media>
+          <file url="././././img/E-s15.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Attach IDC and SATA cables to the provided connectors.</description>
+        <media>
+          <file url="././././img/E-s16.jpg" />
+        </media>
+      </step>
+    </assembly_instruction>
+    <function id="95937653">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="628839031" />
+    </function>
+    <function id="1155222058">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1409593954" />
+    </function>
+    <function id="1171061029">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="890941621" />
+    </function>
+    <function id="906119613">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="256331051" />
+    </function>
+    <function id="21663520">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="878442903" />
+    </function>
+    <function id="2084171680">
+      <description />
+      <designator />
+      <quantity>8</quantity>
+      <implementation type="physical_part" id="1933201803" />
+    </function>
+    <function id="125061389">
+      <description />
+      <designator />
+      <quantity>4</quantity>
+      <implementation type="physical_part" id="433796136" />
+    </function>
+    <function id="1628446735">
+      <description />
+      <designator />
+      <quantity>2</quantity>
+      <implementation type="physical_part" id="1043457599" />
+    </function>
+    <function id="1536605807">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1532750102" />
+    </function>
+    <function id="1642151497">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="156432967" />
+    </function>
+    <function id="441437052">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1673231631" />
+    </function>
+    <function id="1224873141">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1102138332" />
+    </function>
+    <function id="1557508985">
+      <description />
+      <designator />
+      <quantity>2</quantity>
+      <implementation type="physical_part" id="100094399" />
+    </function>
+    <instruction name="">
+      <step>
+        <description />
+        <media />
+      </step>
+      <step>
+        <description />
+        <media />
+      </step>
+    </instruction>
+  </brick>
+  <brick id="1049122606">
+    <name>Mechanical</name>
+    <abstract>Mechanical modules of the KORUZA system.</abstract>
+    <long_description>Mechanical part of the system provides the enclosure and frame for mounting electronic components, as well as allowing later adjustments in pointing direction, focus and laser alignment. Fully modular design, connected with stainless steel rods, allows for straightforward adjustments and modifications of any module, without affecting the whole design.</long_description>
+    <notes />
+    <license />
+    <media />
+    <assembly_instruction>
+      <step>
+        <description>Begin by assembling the mounting sub-module.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Continue with the SFP Mount sub-module.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-2.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Modify the media converter...</description>
+        <media>
+          <file url="./././././././././././././././img/M-3.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>...and assemble the media converter mount.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-4.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the assembled SFP extension plug. Attach SATA cable to SFP extension socket board and plug the IDC cable to the left slot on the PCB board.</description>
+        <media>
+          <file url="./././././././././././././././img/M-4a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the long IDC cable (E-14) and plug it into the right slot on the SFP extension socket board.</description>
+        <media />
+      </step>
+      <step>
+        <description>Assemble the motor mount sub-module.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-5.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Prepare four steel rods (M-O2) and assembled sub-modules.</description>
+        <media>
+          <file url="././././././././././././././././././././././././././././img/M-6.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the mounting sub-module part. Put rods into the holes. If rods do not fit, re-drill holes with the 8.1mm drill. Hammer them all the way in.</description>
+        <media>
+          <file url="././././././././././././././././././././././././././img/M-7.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Tighten two M4 set screws on the laser mount.</description>
+        <media>
+          <file url="././././././././././././././././././././././././././img/M-8.jpg" />
+          <file url="././././././img/M-9.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the assembled SFP mount part.</description>
+        <media>
+          <file url="././././img/M-4a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the whole assembly on rails. Take the long IDC cable (E-14) and plug it into the right slot on the SFP extension socket board.</description>
+        <media>
+          <file url="././././././././././././././././././././././././././img/M-11.jpg" />
+          <file url="././././img/M-O15.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Slide the assembly down, such that the distance between inner edge of the rubber and outer edge of SFP module is 68mm.</description>
+        <media>
+          <file url="././././././././././././././././././././././././././img/M-12.jpg" />
+          <file url="././././././img/M-13.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the assembled media converter mount.</description>
+        <media>
+          <file url="././././././././././././././././././././././././././img/M-14.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the part on the rails such that it sits just below the SATA connector. Optional: you may disconnect the SATA cable during the procedure.</description>
+        <media>
+          <file url="././././././././././././././././././././././././././img/M-15.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the assembled motor mount.</description>
+        <media>
+          <file url="././././././img/M-MM-18.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert it on the rods. Tighten the set screws.</description>
+        <media>
+          <file url="././././img/M-16a.jpg" />
+          <file url="././././img/M-16b.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Connect motors to the PCB on top. Connect the z-motor (located next to the SFP module) to the first connector, the y-motor (facing the media converter) to the second and x-motor to the last connector.</description>
+        <media>
+          <file url="./././././././img/M-17a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Prepare the Philips media converter. Take the power supply cable with the connector (E-19) and plug it in the power socket.</description>
+        <media>
+          <file url="././././img/M-3.jpg" />
+          <file url="././././img/M-17b.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Place the media converter next to the rails. Turn it so that the UTP and SFP ports are pointing upwards and and TP-link title towards the KORUZA assembly. Plug in the PCB socket.</description>
+        <media>
+          <file url="././././././././././././././././././././././././././img/M-18.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Use four TORX M3x10 screws, already inserted in holes, to attach brackets to the laser mount and media converter mount.</description>
+        <media>
+          <file url="././././././././././././././././././././././././././img/M-20.jpg" />
+          <file url="./././././././img/M-19.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Thread the wires of the power supply cable and laser behind the brackets on the right side of media converter to the top.</description>
+        <media>
+          <file url="././././img/M-20a.jpg" />
+          <file url="././././img/M-17b.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Tighten set screws on the motor mount.</description>
+        <media>
+          <file url="././././././././././././././././././././././././././img/M-21.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the 3D printed half-bracet and attach it to the motor mount with the TORX M3 screw, already inserted in the part. Thread the wires behind it.</description>
+        <media>
+          <file url="././././img/M-21a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the power cable (E-18) into the screw terminal (closest to the corner of the board) on the top PCB, mind the polarity.</description>
+        <media>
+          <file url="././././img/M-22.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Connect the laser wires in the slot labelled 'laser' on the top PCB board.</description>
+        <media>
+          <file url="././././img/M-23.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the assembled lid.</description>
+        <media>
+          <file url="././././img/M-24.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Connect the power cable from the lid  to the second screw terminal on the top PCB, mind the polarity.</description>
+        <media>
+          <file url="././././img/M-25.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Connect the long IDC cable, attached to the SFP extension socket board, to the PCB on the lid. Connector is located next to the power cable.</description>
+        <media>
+          <file url="././././img/M-26.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Connect the  the micromatch cable, attached to the lid, to the top PCB board. Connector is located next to the screw terminals.</description>
+        <media>
+          <file url="././././img/M-27.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert UTP plug into the media converter.</description>
+        <media>
+          <file url="././././img/M-28.jpg" />
+        </media>
+      </step>
+    </assembly_instruction>
+    <function id="706281785">
+      <description>Mounting</description>
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="brick" id="868260495" />
+    </function>
+    <function id="1369110519">
+      <description>SFP Mount</description>
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="brick" id="1635345567" />
+    </function>
+    <function id="1172771329">
+      <description>Motor Mount</description>
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="brick" id="2014050285" />
+    </function>
+    <function id="1223015012">
+      <description>Lid</description>
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="brick" id="477746360" />
+    </function>
+    <function id="1957787733">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="163884268" />
+    </function>
+    <function id="2136086046">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1402623794" />
+    </function>
+    <function id="140687606">
+      <description />
+      <designator />
+      <quantity>4</quantity>
+      <implementation type="physical_part" id="1172897957" />
+    </function>
+    <function id="1306523154">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="431363721" />
+    </function>
+    <instruction name="">
+      <step>
+        <description />
+        <media>
+          <file url="./img/K1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description />
+        <media>
+          <file url="./img/M-25.jpg" />
+        </media>
+      </step>
+      <step>
+        <description />
+        <media>
+          <file url="./img/M-O6.jpg" />
+        </media>
+      </step>
+      <step>
+        <description />
+        <media>
+          <file url="./img/M-28.jpg" />
+        </media>
+      </step>
+    </instruction>
+  </brick>
+  <brick id="868260495">
+    <name>Mounting</name>
+    <abstract>Mounting module, holding KORUZA system fixed in the enclosure.</abstract>
+    <long_description>Mounting module provides a stable frame for optical components of the system: lens and green laser, used for initial visual alignment. It is also responsible for holding KORUZA system fixed in the outer enclosure. Consisting of mostly 3D printed parts, a rubber layer is added to enable fine movements in the calibration process and acts as a seal.</long_description>
+    <notes />
+    <license />
+    <media />
+    <assembly_instruction>
+      <step>
+        <description>Take the 3D printed inner ring (M-P5).</description>
+        <media>
+          <file url="./././././././././././././././././img/M-P5.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert four M4 square nuts (M-F12) into the provided slots.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-M-0.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Help yourself with pliers to insert the nuts.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Push  nuts all the way in with the screwdriver.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-2.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert four HEX socket M4x12 screws (M-F7) with M4 washers (M-F15) on them . Do not tighten them fully.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-M-2a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the 3D printed outer ring (M-P4) and nine HEX socket M3x35 screws (M-F4). The outer ring needs to  be positioned in such a way, that smooth side is pointing upwords.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-3.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert M3 screws trough the provided holes, such that screw heads are located on the smooth surface.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-4.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Prepare the custum made rubber (M-O1).</description>
+        <media>
+          <file url="./././././././././././././././././img/M-O1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Put the rubber on the screws. Keep in mind that holes are not symmetrical to preserve the correct orientation.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-6.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Prepare the innerr ring (M-P5).</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-7.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Place the inner ring on top of the assembled structure. Keep in mind the orientation, such that screws are nicely aligned.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-8.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Tighten M3 screws with M3 nuts (M-F11), such that they firmly hold the rubber, but do not tighten them fully.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-9.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the laser mount part (M-P8) and 13 M3 square nuts  (M-F11).</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-10.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert M3 square nuts into the laser mount part. Use pliers.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-11.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert two M4 nuts (M-F12).</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-12.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the two HEX socket M4x12 screws (M-F7) into the holes but do not tighten them.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-12a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert two TORX M3x10 screws (M-F6) into the side holes, do not tighten them fully.</description>
+        <media>
+          <file url="./././././././././././././././././img/M-M-12b.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Prepare the lens outer ring (M-P6) and insert nine HEX socket M3x35 screws (M-F4) trough the lens outer ring, from the side which does not have 8mm holes.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-13.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the outer part...</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-14.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>... and place the outer ring trough the rubber,...</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-15.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>...such that the screws are on the same side as ones on the outer ring.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-16.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the lens mount part (M-P7) and clean the edge if needed.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-17.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the lens (M-O3) with the curve part pointing outwards.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-18.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the lens mounting ring on the screws from the inside, ...</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-19.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>...such that the retaining edge is pointing to the rubber.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-20.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the laser pointer (E-9) such that it sits nicely in the rubber.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-21.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Tread the wires of the laser trough the hole in the laser mount.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-22.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Screw the laser mount part trough the inner ring.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-23.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take two wedges (M-P9 and M-P10). Fit the two M3 square nuts (M-F11) inside the provided slots. Optional: use pliers.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-24.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>They need to fit the whole way in.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-25.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert both wedges into the laser mount.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-26.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the two HEX socket M3x25 screws (M-F3) and fit them trough the wedge.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-27.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Tighten them.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-29.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Fit the M3 square nut (M-F11) inside the provided slot. ake the spring (M-O4) and fit it between the aiming laser and the provided hole with the nut inside.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-30.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the set screw HEX socket M3x16 (M-F1) trough the hole, nut and spring. Do not screw it the whole way trough!</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-M-31.jpg" />
+        </media>
+      </step>
+    </assembly_instruction>
+    <function id="919750532">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1949652032" />
+    </function>
+    <function id="2091327259">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1223348923" />
+    </function>
+    <function id="793074425">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="300978772" />
+    </function>
+    <function id="751753780">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="651846969" />
+    </function>
+    <function id="1372071977">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="355615712" />
+    </function>
+    <function id="2143608450">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1401037567" />
+    </function>
+    <function id="319614740">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="462493670" />
+    </function>
+    <function id="1760205038">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1299311884" />
+    </function>
+    <function id="1790288515">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="627470048" />
+    </function>
+    <function id="162346126">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="450777737" />
+    </function>
+    <function id="1237562839">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1525018106" />
+    </function>
+    <function id="858193897">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1196321165" />
+    </function>
+    <function id="158799662">
+      <description />
+      <designator />
+      <quantity>2</quantity>
+      <implementation type="physical_part" id="1620970247" />
+    </function>
+    <function id="1628987051">
+      <description />
+      <designator />
+      <quantity>18</quantity>
+      <implementation type="physical_part" id="951088927" />
+    </function>
+    <function id="647921561">
+      <description />
+      <designator />
+      <quantity>2</quantity>
+      <implementation type="physical_part" id="1043457599" />
+    </function>
+    <function id="2025816873">
+      <description />
+      <designator />
+      <quantity>6</quantity>
+      <implementation type="physical_part" id="27737697" />
+    </function>
+    <function id="1662248191">
+      <description />
+      <designator />
+      <quantity>25</quantity>
+      <implementation type="physical_part" id="433796136" />
+    </function>
+    <function id="1695533633">
+      <description />
+      <designator />
+      <quantity>6</quantity>
+      <implementation type="physical_part" id="1906572277" />
+    </function>
+    <function id="197293499">
+      <description />
+      <designator />
+      <quantity>4</quantity>
+      <implementation type="physical_part" id="143480854" />
+    </function>
+  </brick>
+  <brick id="1635345567">
+    <name>SFP Mount</name>
+    <abstract>Mechanical module, used for mounting the SFP and media converter.</abstract>
+    <long_description>SFP mounting module provides stable foundation for mounting the SFP and media converter. Based around 3D printed SFP mount part, fastened on the metal rods, part is easily moved at optimal distance from the lens. Small motor, also contained in the module, is used for collimation process, adjusting distance between the lens and SFP module.</long_description>
+    <notes />
+    <license />
+    <media />
+    <assembly_instruction>
+      <step>
+        <description>Prepare 3D printed SFP mount (M-P2) and SFP spring mount (M-P3), together with the inner SFP mounting part (M-P14) and SFP module (E-8).</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the SFP mount part (M-P2).</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-P2.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Push 4 sliding bushings (M-O6) in holes from the bottom...</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-2.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>... and two from the top. Check that the peace easily slides on the rods. If it does not slide nicely, take bushings out and ream holes again.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-3.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert two M3 square nuts (M-F11) in provided slots on the SFP mount part.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-5.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the custom SFP mount part (M-P14). Put eight HEX socket M3x25 screws (M-F3) trough holes and screw it to the SFP mount.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-4.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Add M3 nuts (M-F11).</description>
+        <media>
+          <file url="././././././././././././././././img/M-S-4a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the set screw - HEX socket M3x16 (M-F1) into the aluminium part and screw it with the hex key until it comes to the inside.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-6.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the SFP module (E-8) into the part, so that the back edge of the SFP module is flat with the aluminium part. Tighten the SFP set screw.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-7.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the KORUZA SFP extension socket PCB (E-4) on the SFP module.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-8.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the TORX M3x10 screw (M-F6) to hold the board in place. Place a M3 washer (M-F14) between board and SFP mount. Fast the screw with the M3 square nut (M-F11).</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-9.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Fit the HEX M4x35 screw (M-F9) with the coupler M4 (M-P11) to the motor (E-10) and put the washer (M-F15) on the screw.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-10.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the whole thing onto the mounting part.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-11.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Mount motors with two HEX socket M3x25 screws (M-F3) trough the mount. Do not tighten screws fully.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-12.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the SFP spring mount part (M-P3).</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-P3.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert two M3 square nuts (M-F11) and one M4 nut  (M-F12) into the provided slots. It needs to fit the whole way in the spring mount.
+Insert two TORX M3x10 (M-F6) screws.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-13.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Add washer M4 (M-F15) then, spring (M-O4) and one more washer on the screw of the SFP mount.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-14.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Screw the mount part.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-15.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Prepare Philips media converter (M-O13) and four brackets (M-P16).</description>
+        <media>
+          <file url="././././././././././././././././img/M-S-16.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Remove four screws from the Philips media converter.</description>
+        <media>
+          <file url="././././././././././././././././img/M-S-17.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Attach brackets (M-P16) to the SFP module with the TORX M3x10 screws (M-F6).</description>
+        <media>
+          <file url="././././././././././././././././img/M-S-18.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the media converter mount (M-P12).</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-19.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert two M3 square nuts (M-F11) into the provided holes.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-20.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert, but not tighten two TORX M3x10 screws (M-F6).</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-S-21.jpg" />
+        </media>
+      </step>
+    </assembly_instruction>
+    <function id="180171336">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="143371102" />
+    </function>
+    <function id="1774201015">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="427049766" />
+    </function>
+    <function id="1730021130">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1320623569" />
+    </function>
+    <function id="1062964630">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="445185661" />
+    </function>
+    <function id="481066647">
+      <description />
+      <designator />
+      <quantity>4</quantity>
+      <implementation type="physical_part" id="1336547016" />
+    </function>
+    <function id="1461658477">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1439566493" />
+    </function>
+    <function id="814980842">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="821294759" />
+    </function>
+    <function id="1029055488">
+      <description />
+      <designator />
+      <quantity>6</quantity>
+      <implementation type="physical_part" id="900591337" />
+    </function>
+    <function id="1104045935">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1964809520" />
+    </function>
+    <function id="1764969083">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1146591845" />
+    </function>
+    <function id="429250623">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1525018106" />
+    </function>
+    <function id="939049133">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1472466945" />
+    </function>
+    <function id="1707741269">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1196321165" />
+    </function>
+    <function id="1514954375">
+      <description />
+      <designator />
+      <quantity>10</quantity>
+      <implementation type="physical_part" id="1620970247" />
+    </function>
+    <function id="607846709">
+      <description />
+      <designator />
+      <quantity>9</quantity>
+      <implementation type="physical_part" id="1043457599" />
+    </function>
+    <function id="2038676831">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1585577842" />
+    </function>
+    <function id="1456007786">
+      <description />
+      <designator />
+      <quantity>15</quantity>
+      <implementation type="physical_part" id="433796136" />
+    </function>
+    <function id="337826900">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1906572277" />
+    </function>
+    <function id="223783909">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="100094399" />
+    </function>
+    <function id="475937065">
+      <description />
+      <designator />
+      <quantity>3</quantity>
+      <implementation type="physical_part" id="143480854" />
+    </function>
+    <function id="661966778">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1964809520" />
+    </function>
+  </brick>
+  <brick id="2014050285">
+    <name>Motor Mount</name>
+    <abstract>Mechanical module, used for mounting motors, responsible for moving the IR laser beam.</abstract>
+    <long_description>The motor mount module is based around a 3D printed motor mount part, which hosts two motors controlling pointing direction of the beam, by turning two micrometer screws. Due to micro-stepping very precise alignment of units is possible. Pointing direction can change for as little as 0.6 mRad in one step.</long_description>
+    <notes />
+    <license />
+    <media>
+      <file url="./././././././././././././././././././././././././././././img/M-MM-0.jpg" />
+    </media>
+    <assembly_instruction>
+      <step>
+        <description>Prepare the 3D printed motor mount (M-P13).</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-MM-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert four M4 square nuts (M-F12) and one M3 nut into the slots on the bottom part of the motor mount.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-MM-2.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert one TORX M3x10 screw (M-F6). Insert two HEX socket M4x12 screws (M-F7).</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-MM-3.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Repeate on the other side.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-MM-4.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Tighten the second screw on each side.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-MM-5.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Attach the half-bracket (M-P17) with the TORX M3x10 (M-F6) screw. Do not tighten fully!</description>
+        <media />
+      </step>
+      <step>
+        <description>Insert six M4 square nuts (M-F12) into the provided slots.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-MM-6.jpg" />
+        </media>
+      </step>
+      <step>
+        <description />
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-MM-7.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert two HEX socket M4x12 screws (M-F7) into provided holes.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-MM-8.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Prepare two motors (E-10), two custom M5x65 screws (M-F10), two M5 couplers (M-O8) and two long M5 nuts (M-F13).</description>
+        <media>
+          <file url="././././././././././././././././img/M-MM-9.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Put nut on the screw such that it is flushed with the screw tip.</description>
+        <media>
+          <file url="././././././././././././././././img/M-MM-10.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the M5 coupler onto the screw.</description>
+        <media>
+          <file url="././././././././././././././././img/M-MM-11.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the whole assembly into the motor.</description>
+        <media>
+          <file url="././././././././././././././././img/M-MM-12.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Put M5 screw trough the hole in motor mount in such a way that the hole on the nut points into the direction of previously inserted M4x10 set screw.</description>
+        <media>
+          <file url="././././././././././././././././img/M-MM-13.jpg" />
+        </media>
+      </step>
+      <step>
+        <description />
+        <media>
+          <file url="././././././././././././././././img/M-MM-14.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Repeat for the other motor.</description>
+        <media>
+          <file url="././././././././././././././././img/M-MM-15.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Tighten both M4x10 set screws.</description>
+        <media>
+          <file url="././././././././././././././././img/M-MM-16.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take two HEX socket M4x45 screws (M-F5). Insert  screws into provided holes trough the motor. Tighten screws all the way to the motor mounting tab. Repeat for the other motor.</description>
+        <media>
+          <file url="././././././././././././././././img/M-MM-17.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Attach the universal unipolar stepper driver PCB board  (E-5) with two TORX M3x10 screws (M-F6).</description>
+        <media>
+          <file url="././././././././././././././././img/M-MM-18.jpg" />
+        </media>
+      </step>
+    </assembly_instruction>
+    <function id="125766549">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="649509201" />
+    </function>
+    <function id="2058570586">
+      <description />
+      <designator />
+      <quantity>2</quantity>
+      <implementation type="physical_part" id="1146591845" />
+    </function>
+    <function id="2108681237">
+      <description />
+      <designator />
+      <quantity>2</quantity>
+      <implementation type="physical_part" id="1741395927" />
+    </function>
+    <function id="1842061708">
+      <description />
+      <designator />
+      <quantity>4</quantity>
+      <implementation type="physical_part" id="155671569" />
+    </function>
+    <function id="226713534">
+      <description />
+      <designator />
+      <quantity>3</quantity>
+      <implementation type="physical_part" id="1043457599" />
+    </function>
+    <function id="26126024">
+      <description />
+      <designator />
+      <quantity>4</quantity>
+      <implementation type="physical_part" id="27737697" />
+    </function>
+    <function id="298955813">
+      <description />
+      <designator />
+      <quantity>2</quantity>
+      <implementation type="physical_part" id="2103176148" />
+    </function>
+    <function id="1790090588">
+      <description />
+      <designator />
+      <quantity>10</quantity>
+      <implementation type="physical_part" id="1906572277" />
+    </function>
+    <function id="152124714">
+      <description />
+      <designator />
+      <quantity>2</quantity>
+      <implementation type="physical_part" id="694341069" />
+    </function>
+    <function id="18125572">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="611992735" />
+    </function>
+    <function id="1764074769">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="433796136" />
+    </function>
+  </brick>
+  <brick id="477746360">
+    <name>Lid</name>
+    <abstract />
+    <long_description />
+    <notes />
+    <license />
+    <media />
+    <assembly_instruction>
+      <step>
+        <description>Prepare the 3D printed lid (M-P15).</description>
+        <media>
+          <file url="./././././././img/M-P15.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the previously assembled control elecreonics.</description>
+        <media>
+          <file url="./././././././img/M-L-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Place it into the lid, so that the Power module PCB is facing the holes.</description>
+        <media>
+          <file url="./././././././img/M-L-2.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Fasten the electronics in place with two M3x10 TORX screws (M-F6).</description>
+        <media>
+          <file url="./././././././img/M-L-3.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the waterproof eth + power cable (E-12) into the first provided hole.</description>
+        <media>
+          <file url="./././././././img/M-L-4.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the power plug into the PCB board.</description>
+        <media>
+          <file url="./././././././img/M-L-5.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the waterproof eth cable (E-11) into the second provided hole.</description>
+        <media>
+          <file url="./././././././img/M-L-6.jpg" />
+        </media>
+      </step>
+    </assembly_instruction>
+    <function id="333528688">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="540043447" />
+    </function>
+    <function id="1352140635">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="643324725" />
+    </function>
+    <function id="681237872">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1569586582" />
+    </function>
+    <function id="873548796">
+      <description />
+      <designator />
+      <quantity>2</quantity>
+      <implementation type="physical_part" id="1043457599" />
+    </function>
+  </brick>
+  <brick id="423240191">
+    <name>Outdoor Enclosure and Mounting</name>
+    <abstract />
+    <long_description />
+    <notes />
+    <license />
+    <media />
+    <assembly_instruction />
+    <function id="1069346104">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="brick" id="1613519948" />
+    </function>
+    <function id="1968934648">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="brick" id="2127214715" />
+    </function>
+    <function id="368763414">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="brick" id="1189248285" />
+    </function>
+  </brick>
+  <brick id="1613519948">
+    <name>Outdoor Enclosure</name>
+    <abstract>Outdoor enclosure of the KORUZA system.</abstract>
+    <long_description>Enclosure provides protection to the inner system and allows for mounting the system on the wall, rod or any fixed, stable object. Its design also allows the user to adjust initial pointing direction, using the green laser as a reference.</long_description>
+    <notes />
+    <license />
+    <media />
+    <assembly_instruction>
+      <step>
+        <description>Take the square profile (M-E1).</description>
+        <media>
+          <file url="././././img/M-O-1.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>We assemble the square profile to the U-profile (M-E2) using two HEX socket M4x12 screws (M-F7) and M4 nuts (M-F12).</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-O-2.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Pull the screw trough both holes, such that the head is located inside the square profile. Put on the M4 nut.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-O-3.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Repeat on the other side.</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-O-4.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the eye-bolt screw (M-F17), the L-profile  (M-E3), two M10 nuts (M-F16) and a spring washer (M-F21).</description>
+        <media>
+          <file url="./././././././././././././././././././././././././././././img/M-O-5.jpg" />
+          <file url="././././img/M-O-5a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Put a nut and a spring washer on the screw, then insert it into the hole located in the bottom corner of the L-profile.</description>
+        <media>
+          <file url="././././img/M-O-6.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Put on another nut (M-F16).</description>
+        <media>
+          <file url="././././img/M-O-7.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Prepare the antenna holder set (M-E4), containing the mounting piece, small U-profile, three shorter M8 screws, nuts and washers, two longer M10 screws and nuts and six M8 washers.</description>
+        <media>
+          <file url="././././img/M-O-8.jpg" />
+          <file url="././././img/M-O-8a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Prepare the largere mounting piece. Insert two M10 screws troug the hole on each side, such that heads are located on the flat side of the mounting piece.</description>
+        <media>
+          <file url="././././img/M-O-9.jpg" />
+          <file url="././././img/M-O-9a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Slide the small U-prifile on M10 nuts, such that the flat side is pointing away from the mounting piece.</description>
+        <media>
+          <file url="././././img/M-O-10.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert an M10 washer and nut on each screw.</description>
+        <media>
+          <file url="././././img/M-O-11.jpg" />
+          <file url="././././img/M-O-11a.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Place the antenna holder to the side of the L-profile.  Take three M8 screws  from the package  and pul them through the holder and the middle opening on the side of the L-profile.</description>
+        <media>
+          <file url="././././img/M-O-12.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Put M8 washer and nut on each screw. Fast nuts in desirable position for mounting.</description>
+        <media>
+          <file url="././././img/M-O-13.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the M10x75 screw (M-F18) and pull it through the hole located on the bottom of the square profile. Keep in mind that the screw head should be located on the inside of the square tube. Put the spring washer (M-F21) and two nuts (M-F16) on it.</description>
+        <media>
+          <file url="././././img/M-O-14.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Tighten the first nut such that washer sits tight in place. The function of the other nut is to secure position in the oval opening of the L-profile. Put a washer (M-F20) on it.</description>
+        <media>
+          <file url="././././img/M-O-15.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Take the square profile and place the L-profile on top, so that the M10x75 screw fits trough the second oval opening of the L-profile.</description>
+        <media>
+          <file url="././././img/M-O-16.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Prepare the M10x160 screw (M-F19) and pull it through the side-left hole on the L-profile.</description>
+        <media>
+          <file url="././././img/M-O-17.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Put on the spring washer (M-F21), two nuts (M-F16) and another M10 washer (M-F20).</description>
+        <media>
+          <file url="././././img/M-O-18.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>M10x160 must fit trough the side opening of the U-Profile. Put on two more M10 (M-F16) nuts before pulling it trough the ring-bolt.</description>
+        <media>
+          <file url="././././img/M-O-19.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert another two M10 nuts (M-F16) to make the assembly symmetrical. Pull the screw all the way trough the U-profile.</description>
+        <media>
+          <file url="././././img/M-O-20.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Insert the washer (M-F20) and M10 nut (M-F16).</description>
+        <media>
+          <file url="././././img/M-O-21.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Center the square profile and L-profile and fasten all the nuts, beginning with the one closest to the L-profile.</description>
+        <media>
+          <file url="././././img/M-O-22.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>Lastly, add a nut on the M10x75 screw to fix the L-profile in place.</description>
+        <media>
+          <file url="././././img/M-O-25.jpg" />
+        </media>
+      </step>
+      <step>
+        <description>The outdoor enclosure is now complete. Keep in mind, that usually you want to assamble the enclosure for another unit in the miror-like fashion to enable easier mounting.</description>
+        <media>
+          <file url="././././img/M-O-26.jpg" />
+        </media>
+      </step>
+    </assembly_instruction>
+    <function id="1213668551">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1765512906" />
+    </function>
+    <function id="125816381">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="1822230973" />
+    </function>
+    <function id="1386465546">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="520946028" />
+    </function>
+    <function id="2114026206">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="519660714" />
+    </function>
+    <function id="151771627">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="704278121" />
+    </function>
+    <function id="1769163903">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="988897778" />
+    </function>
+    <function id="412927192">
+      <description />
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="260658620" />
+    </function>
+    <function id="1911181924">
+      <description />
+      <designator />
+      <quantity>10</quantity>
+      <implementation type="physical_part" id="1854424443" />
+    </function>
+    <function id="721008920">
+      <description />
+      <designator />
+      <quantity>4</quantity>
+      <implementation type="physical_part" id="505267467" />
+    </function>
+    <function id="1971098884">
+      <description />
+      <designator />
+      <quantity>3</quantity>
+      <implementation type="physical_part" id="1515181741" />
+    </function>
+    <function id="1724726996">
+      <description />
+      <designator />
+      <quantity>2</quantity>
+      <implementation type="physical_part" id="1906572277" />
+    </function>
+    <function id="305582640">
+      <description />
+      <designator />
+      <quantity>2</quantity>
+      <implementation type="physical_part" id="27737697" />
+    </function>
+  </brick>
+  <brick id="1189248285">
+    <name>System mounting</name>
+    <abstract />
+    <long_description />
+    <notes />
+    <license />
+    <media />
+    <assembly_instruction />
+  </brick>
+  <brick id="2127214715">
+    <name>Calibration</name>
+    <abstract />
+    <long_description />
+    <notes />
+    <license />
+    <media />
+    <assembly_instruction>
+      <step>
+        <description>P</description>
+        <media />
+      </step>
+    </assembly_instruction>
+  </brick>
+</docubricks>
