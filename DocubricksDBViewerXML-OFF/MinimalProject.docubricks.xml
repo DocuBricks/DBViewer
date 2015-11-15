@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xml" href="docubricks.xsl"?>
+<docubricks>
+  <physical_part id="50301520">
+    <description>Example 3D printed part</description>
+    <supplier>Example filament supplier</supplier>
+    <supplier_part_num />
+    <manufacturer_part_num />
+    <url />
+    <material_amount />
+    <material_unit>NONE</material_unit>
+    <media />
+    <manufacturing_instruction>
+      <step>
+        <description>Example: drill through all holes with an M3 clearence drill (3.4mm) to ensure perfect fit of other components.</description>
+        <media />
+      </step>
+    </manufacturing_instruction>
+  </physical_part>
+  <brick id="372140810">
+    <name>Example Project</name>
+    <abstract>Project to demonstrate the use of the most important DocuBricks features</abstract>
+    <long_description>Please describe what your hardware does, why you designed it and what the most important features are.</long_description>
+    <notes>Anything else worth knowing? Inspirations and References as well as hints.</notes>
+    <license>MIT license</license>
+    <media />
+    <assembly_instruction />
+    <author id="1978260633" />
+    <function id="1584757221">
+      <description>E.g. Linear motor drive and rails</description>
+      <designator />
+      <quantity>1</quantity>
+      <implementation type="physical_part" id="50301520" />
+      <implementation type="brick" id="1690875349" />
+    </function>
+    <instruction name="">
+      <step>
+        <description />
+        <media />
+      </step>
+    </instruction>
+    <instruction name="" />
+    <instruction name="">
+      <step>
+        <description />
+        <media />
+      </step>
+    </instruction>
+    <instruction name="" />
+  </brick>
+  <brick id="1690875349">
+    <name>Unnamed</name>
+    <abstract />
+    <long_description />
+    <notes />
+    <license />
+    <media />
+    <assembly_instruction />
+  </brick>
+  <author id="1978260633">
+    <name>Max Mustermann</name>
+    <email>example@docubricks.com</email>
+    <orcid>For researchers, get one at orcid.org</orcid>
+    <affiliation>University of Cambridge</affiliation>
+  </author>
+</docubricks>
